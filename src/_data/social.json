@@ -4,39 +4,15 @@
 		"url": ""
 	},
 	{
-		"platform": "dribbble",
-		"url": ""
-	},
-	{
 		"platform": "github",
-		"url": "https://www.github.com/shanerobinson"
-	},
-	{
-		"platform": "instagram",
-		"url": "https://www.instagram.com/shanerobinson"
+		"url": "https://www.github.com/drmikecrowe"
 	},
 	{
 		"platform": "linkedin",
-		"url": "https://www.linkedin.com/in/rshanerobinson"
-	},
-	{
-		"platform": "piedpiper",
-		"url": "https://www.piedpiper.com/shanerobinson"
-	},
-	{
-		"platform": "pinterest",
-		"url": "https://www.pinterest.com/shanerobinson"
+		"url": "https://www.linkedin.com/in/mwcrowe"
 	},
 	{
 		"platform": "rss",
 		"url": "/feed.xml"
-	},
-	{
-		"platform": "twitter",
-		"url": "https://www.twitter.com/shanerobinson"
-	},
-	{
-		"platform": "youtube",
-		"url": ""
 	}
 ]
