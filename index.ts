@@ -11,8 +11,6 @@ import * as path from 'path'
 
 const stackConfig = new pulumi.Config()
 
-const current = aws.s3.getCanonicalUserId({})
-
 const config = {
 	// pathToWebsiteContents is a relativepath to the website's contents.
 	pathToWebsiteContents: stackConfig.require('pathToWebsiteContents'),
@@ -35,7 +33,6 @@ const contentBucket = new aws.s3.Bucket('contentBucket', {
 		indexDocument: 'index.html',
 		errorDocument: '404.html',
 	},
-	acl: aws.s3.CannedAcl.PublicRead,
 })
 
 // crawlDirectory recursive crawls the provided directory, applying the provided function
@@ -67,7 +64,7 @@ crawlDirectory(webContentsRootPath, (filePath: string) => {
 		{
 			key: relativeFilePath,
 
-			acl: aws.s3.CannedAcl.PublicRead,
+			acl: 'public-read',
 			bucket: contentBucket,
 			contentType: mime.getType(filePath) || undefined,
 			source: new pulumi.asset.FileAsset(filePath),
@@ -83,45 +80,6 @@ const logsBucket = new aws.s3.Bucket('requestLogs', {
 	bucket: `${config.targetDomain}-logs`,
 	acl: 'private',
 })
-const requestLogsOwnershipControls = new aws.s3.BucketOwnershipControls(
-	'requestLogsOwnershipControls',
-	{
-		bucket: logsBucket.id,
-		rule: {
-			objectOwnership: 'BucketOwnerPreferred',
-		},
-	},
-)
-const requestLogsAclV2 = new aws.s3.BucketAclV2(
-	'requestLogsAclV2',
-	{
-		bucket: logsBucket.id,
-		accessControlPolicy: {
-			grants: [
-				{
-					grantee: {
-						id: current.then((current) => current.id),
-						type: 'CanonicalUser',
-					},
-					permission: 'READ',
-				},
-				{
-					grantee: {
-						type: 'Group',
-						uri: 'http://acs.amazonaws.com/groups/s3/LogDelivery',
-					},
-					permission: 'WRITE',
-				},
-			],
-			owner: {
-				id: current.then((current) => current.id),
-			},
-		},
-	},
-	{
-		dependsOn: [requestLogsOwnershipControls],
-	},
-)
 
 const tenMinutes = 60 * 10
 
@@ -224,23 +182,6 @@ const originAccessIdentity = new aws.cloudfront.OriginAccessIdentity(
 	},
 )
 
-const bucketPolicy = new aws.s3.BucketPolicy('bucketPolicy', {
-	bucket: contentBucket.id, // refer to the bucket created earlier
-	policy: pulumi.jsonStringify({
-		Version: '2012-10-17',
-		Statement: [
-			{
-				Effect: 'Allow',
-				Principal: {
-					AWS: originAccessIdentity.iamArn,
-				}, // Only allow Cloudfront read access.
-				Action: ['s3:GetObject'],
-				Resource: [pulumi.interpolate`${contentBucket.arn}/*`], // Give Cloudfront access to the entire bucket.
-			},
-		],
-	}),
-})
-
 // if config.includeWWW include an alias for the www subdomain
 const distributionAliases = config.includeWWW
 	? [config.targetDomain, `www.${config.targetDomain}`]
@@ -259,9 +200,14 @@ const distributionArgs: aws.cloudfront.DistributionArgs = {
 	origins: [
 		{
 			originId: contentBucket.arn,
-			domainName: contentBucket.websiteEndpoint, // Use the websiteEndpoint attribute
-			s3OriginConfig: {
-				originAccessIdentity: originAccessIdentity.cloudfrontAccessIdentityPath,
+			domainName: contentBucket.websiteEndpoint,
+			customOriginConfig: {
+				httpPort: 80,
+				httpsPort: 443,
+				originProtocolPolicy: 'http-only',
+				originSslProtocols: ['TLSv1.2'],
+				originReadTimeout: 30,
+				originKeepaliveTimeout: 5,
 			},
 		},
 	],
@@ -386,6 +332,21 @@ function createWWWAliasRecord(
 		],
 	})
 }
+
+const bucketPolicy = new aws.s3.BucketPolicy('bucketPolicy', {
+	bucket: contentBucket.id, // refer to the bucket created earlier
+	policy: pulumi.jsonStringify({
+		Version: '2012-10-17',
+		Statement: [
+			{
+				Effect: 'Allow',
+				Principal: '*', // Allow public read access to everyone
+				Action: 's3:GetObject',
+				Resource: [pulumi.interpolate`${contentBucket.arn}/*`], // Give Cloudfront access to the entire bucket.
+			},
+		],
+	}),
+})
 
 const aRecord = createAliasRecord(config.targetDomain, cdn)
 if (config.includeWWW) {
