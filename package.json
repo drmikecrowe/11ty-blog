@@ -1,16 +1,16 @@
 {
-  "name": "sr-11ty-tailwind-alpine-template",
+  "name": "mikes-shiny-objects-blog",
   "version": "1.0.0",
-  "description": "Template for new projects with 11ty, TailwindCSS, TailwindUI, and Alpine.js",
-  "author": "Shane Robinson",
+  "description": "My blog",
+  "author": "Mike Crowe (credit to Shane Robinson)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/shanerobinson/sr-11ty-tailwind-alpine-template/issues"
+    "url": "https://github.com/drmikecrowe/11ty-blog/issues"
   },
-  "homepage": "https://github.com/shanerobinson/sr-11ty-tailwind-alpine-template#readme",
+  "homepage": "https://github.com/drmikecrowe/11ty-blog#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/shanerobinson/sr-11ty-tailwind-alpine-template.git"
+    "url": "https://github.com/drmikecrowe/11ty-blog"
   },
   "keywords": [
     "11ty",
@@ -21,47 +21,63 @@
     "PostCSS",
     "CSSnano"
   ],
+  "engines": {
+    "node": ">=20.11.1",
+    "pnpm": ">=9.0.6"
+  },
+  "main": "deploy.ts",
+  "packageManager": "pnpm@9.0.6",
   "scripts": {
-    "build": "NODE_ENV=production npm-run-all clean build:*",
-    "build:eleventy": "ELEVENTY_PRODUCTION=true npx @11ty/eleventy",
-    "build:tailwind": "npx tailwindcss -i src/assets/css/tailwind.css -o dist/css/styles.css --minify",
+    "build": "pnpm run clean && NODE_ENV=production concurrently \"pnpm run build:*\"",
+    "build:eleventy": "ELEVENTY_PRODUCTION=true pnpm dlx @11ty/eleventy",
+    "build:tailwind": "pnpm exec tailwindcss -i src/assets/css/tailwind.css -o dist/css/styles.css --minify",
     "clean": "rimraf dist",
     "debug": "set DEBUG=* & eleventy",
-    "dev": "npm-run-all clean --parallel dev:*",
-    "dev:eleventy": "npx @11ty/eleventy --serve",
-    "dev:tailwind": "npx tailwindcss -i src/assets/css/tailwind.css -o dist/css/styles.css --watch",
+    "dev": "pnpm run clean && concurrently \"pnpm run dev:*\"",
+    "dev:eleventy": "pnpm dlx @11ty/eleventy --serve",
+    "dev:tailwind": "pnpm exec tailwindcss -i src/assets/css/tailwind.css -o dist/css/styles.css --watch",
     "refresh": "aws-sso exec -p personal-mike-AdministratorAccess pulumi refresh -fy",
     "aws-shell": "aws-sso exec -p personal-mike-AdministratorAccess fish",
-    "deploy": "aws-sso exec -p personal-mike-AdministratorAccess pulumi up"
+    "deploy": "pnpm run build && pnpm run deploy:aws",
+    "deploy:aws": "aws-sso exec -p personal-mike-AdministratorAccess pulumi up"
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
     "@11ty/eleventy-navigation": "^0.3.5",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
-    "@pulumi/aws": "^6.33.0",
-    "@pulumi/pulumi": "^3.114.0",
+    "@pulumi/aws": "^6.33.1",
+    "@pulumi/pulumi": "^3.115.0",
     "@tailwindcss/forms": "^0.5.7",
+    "@types/alpinejs": "~3.13.10",
     "@types/aws-lambda": "8.10.137",
+    "@types/caniuse-lite": "~1.0.5",
+    "@types/concurrently": "~7.0.0",
+    "@types/debug": "~4.1.12",
+    "@types/feather-icons": "~4.29.4",
+    "@types/luxon": "~3.4.2",
+    "@types/markdown-it": "~14.1.1",
+    "@types/markdown-it-emoji": "~3.0.1",
+    "@types/mime": "~3.0.4",
+    "@types/node": "^20",
     "alpinejs": "^3.13.10",
+    "caniuse-lite": "^1.0.30001616",
+    "concurrently": "^6.5.1",
+    "debug": "^4.3.4",
     "dotenv": "^16.4.5",
     "eleventy-plugin-icons": "^4.5.0",
     "eleventy-plugin-svg-sprite": "^2.4.2",
-    "feather-icons": "^4.29.1",
-    "lucide-static": "^0.376.0",
+    "feather-icons": "^4.29.2",
+    "lucide-static": "^0.378.0",
     "luxon": "^3.4.4",
     "markdown-it": "^14.1.0",
     "markdown-it-emoji": "^3.0.0",
-    "npm-run-all": "^4.1.5",
+    "mime": "^3.0.0",
     "prettier": "^3.2.5",
     "rimraf": "^5.0.5",
     "simple-icons": "^11.14.0",
     "slugify": "^1.6.6",
     "tailwindcss": "^3.4.3",
     "yaml-language-server": "^1.14.0"
-  },
-  "dependencies": {
-    "caniuse-lite": "^1.0.30001614",
-    "debug": "^4.3.4"
   }
 }

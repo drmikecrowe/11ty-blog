@@ -3,11 +3,11 @@ title: Databricks Multiple Filters using a Python Lambda statement
 description: ""
 date: 2024-04-28T22:35:26.033Z
 preview: ""
-draft: true
+draft: false
 categories:
   - pinnacle
 type: default
-excerpt: I'm obsessing about the best wordle start words
+excerpt: "Do you use Databricks?  I do.  And I love it.  But sometimes it's hard to filter down a large dataframe to just what you want.  Maybe you want to filter on 11 different columns?  Or 11 different columns with different operators?  Well, I've got a trick for that, and it's pretty elegant."
 tags:
   - tech
   - python
