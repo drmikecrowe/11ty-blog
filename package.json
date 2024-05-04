@@ -22,21 +22,27 @@
     "CSSnano"
   ],
   "scripts": {
+    "build": "NODE_ENV=production npm-run-all clean build:*",
+    "build:eleventy": "ELEVENTY_PRODUCTION=true npx @11ty/eleventy",
+    "build:tailwind": "npx tailwindcss -i src/assets/css/tailwind.css -o dist/css/styles.css --minify",
     "clean": "rimraf dist",
     "debug": "set DEBUG=* & eleventy",
-    "dev:tailwind": "npx tailwindcss -i src/assets/css/tailwind.css -o dist/css/styles.css --watch",
-    "dev:eleventy": "npx @11ty/eleventy --serve",
     "dev": "npm-run-all clean --parallel dev:*",
-    "build:tailwind": "npx tailwindcss -i src/assets/css/tailwind.css -o dist/css/styles.css --minify",
-    "build:eleventy": "ELEVENTY_PRODUCTION=true npx @11ty/eleventy",
-    "build": "NODE_ENV=production npm-run-all clean build:*"
+    "dev:eleventy": "npx @11ty/eleventy --serve",
+    "dev:tailwind": "npx tailwindcss -i src/assets/css/tailwind.css -o dist/css/styles.css --watch",
+    "refresh": "aws-sso exec -p personal-mike-AdministratorAccess pulumi refresh",
+    "aws-shell": "aws-sso exec -p personal-mike-AdministratorAccess fish",
+    "deploy": "aws-sso exec -p personal-mike-AdministratorAccess pulumi up"
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
     "@11ty/eleventy-navigation": "^0.3.5",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+    "@pulumi/aws": "^6.33.0",
+    "@pulumi/pulumi": "^3.114.0",
     "@tailwindcss/forms": "^0.5.7",
+    "@types/aws-lambda": "8.10.137",
     "alpinejs": "^3.13.10",
     "dotenv": "^16.4.5",
     "eleventy-plugin-icons": "^4.5.0",
