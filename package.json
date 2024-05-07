@@ -25,10 +25,10 @@
     "node": ">=20.11.1",
     "pnpm": ">=9.0.6"
   },
-  "main": "deploy.ts",
+  "main": "pulumi.ts",
   "packageManager": "pnpm@9.0.6",
   "scripts": {
-    "build": "pnpm run clean && NODE_ENV=production concurrently \"pnpm run build:*\"",
+    "build": "pnpm run clean && NODE_ENV=production URL=https://mikesshinyobjects.tech concurrently \"pnpm run build:*\"",
     "build:eleventy": "ELEVENTY_PRODUCTION=true pnpm dlx @11ty/eleventy",
     "build:tailwind": "pnpm exec tailwindcss -i src/assets/css/tailwind.css -o dist/css/styles.css --minify",
     "clean": "rimraf dist",
@@ -39,7 +39,7 @@
     "refresh": "aws-sso exec -p personal-mike-AdministratorAccess pulumi refresh -fy",
     "aws-shell": "aws-sso exec -p personal-mike-AdministratorAccess fish",
     "deploy": "pnpm run build && pnpm run deploy:aws",
-    "deploy:aws": "aws-sso exec -p personal-mike-AdministratorAccess pulumi up"
+    "deploy:aws": "aws-sso exec -p personal-mike-AdministratorAccess -- pulumi up"
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",

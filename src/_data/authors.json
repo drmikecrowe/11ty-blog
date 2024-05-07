@@ -19,6 +19,10 @@
 		],
 		"socialWebsites": [
 			{
+				"label": "mastodon",
+				"url": "https://hachyderm.io/@drmikecrowe"
+			},
+			{
 				"label": "github",
 				"url": "https://github.com/drmikecrowe"
 			},

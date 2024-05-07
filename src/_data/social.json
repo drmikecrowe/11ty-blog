@@ -4,6 +4,11 @@
 		"url": ""
 	},
 	{
+		"platform": "mastodon",
+		"url": "https://hachyderm.io/@drmikecrowe",
+		"rel": "me"
+	},
+	{
 		"platform": "github",
 		"url": "https://www.github.com/drmikecrowe"
 	},

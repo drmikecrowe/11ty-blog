@@ -3,8 +3,9 @@ title: Dynamic Databricks Widgets
 description: ""
 date: 2024-05-04T16:25:19.053Z
 preview: ""
-draft: true
-categories: []
+draft: false
+categories: 
+  - pinnacle
 type: default
 excerpt: "Dynamic Databricks Widgets is a common problem, especially when working in Databricks. Changing one widget can lead to others adjusting in response. That can be a bit tricky, but it's not hard. Here's the secret: the widgets must be replaced as they change! For example, let's say you have a date input, and whenever it changes, you want a second widget to change. That second widget needs to be suffixed with an increasing number as the contents change."
 tags:
@@ -24,7 +25,7 @@ images: # relative to /src/assets/images/
 
 Have you ever wished the Databricks widgets were a little more intelligent?  When you change one, the others adjust?
 
-That's not too hard, but it's a bit tricy.  Here's the secret:  The widgets must be replaced as they change!  For example:
+That's not too hard, but it's a bit tricky.  Here's the secret:  The widgets must be replaced as they change!  For example:
 
 Let's say you have a date input, and whenever it changes, you want a second widget to change.  That second widget needs to be suffixed with an increasing number as the contents change.  Consider:
 

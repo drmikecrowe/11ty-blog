@@ -104,7 +104,7 @@ Next, we need to add all the words to the system:
 
 Good. Now we can see our stats for a given letter. Here are the most common letters _**for the word list used by WordMaster!**_ (I don’t have access to the actual Wordle word list)
 
-![screenshot](2023/03/2022-03-05_12-21.png)
+![screenshot](/assets/images/2023/03/2022-03-05_12-21.png)
 
 This output is from the awesome [debug](https://github.com/debug-js/debug) library — run:  
 `DEBUG=letters:verbose ts-node -T index.ts`
@@ -270,7 +270,7 @@ Now the loop runs in seconds. I wouldn’t have minded it taking a while to comp
 
 After discussions with another [Pinnacle consultant,](https://pinnsg.com/consultant/kevin-rohr/) we brainstormed on how to weigh the position. In thinking about it, we could accumulate the weights per position and add that ratio to the total. For instance, consider the letter A in this word:
 
-![Letter a weights](2023/03/2022-03-07_12-27-position-weight.png)
+![Letter a weights](/assets/images/2023/03/2022-03-07_12-27-position-weight.png)
 
 Letter A weights
 

@@ -1,5 +1,5 @@
 config:
-  aws-ts-static-website:certificateArn: arn:aws:acm:us-east-1:296295289135:certificate/01e909a1-c3d1-42c4-b8c2-75b73cd9a971
-  aws-ts-static-website:includeWWW: "false"
+  aws-ts-static-website:certificateArn: arn:aws:acm:us-east-1:296295289135:certificate/de2e8f8c-47bb-4a21-9e94-987d3860eaf7
+  aws-ts-static-website:includeWWW: "true"
   aws-ts-static-website:pathToWebsiteContents: ./dist/
   aws-ts-static-website:targetDomain: mikesshinyobjects.tech

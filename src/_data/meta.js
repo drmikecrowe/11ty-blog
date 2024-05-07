@@ -1,13 +1,16 @@
 module.exports = {
 	siteURL: process.env.URL || 'http://localhost:8080',
 	siteName: "Mike's Shiny Objects",
-	siteDescription: "Thoughts, Solutions, Creations and Ah-Ha's",
+	siteDescription:
+		'Python, TypeScript, CI/CD, AWS, Databricks, Big data, Spark and other tech topics that I find interesting.',
 	siteImage: '/assets/images/site/default.png',
 	lang: 'en',
 	locale: 'en_us',
 	authorName: 'Mike Crowe',
 	authorURL: 'mike-crowe',
 	authorEmail: 'drmikecrowe@gmail.com',
+	twitterSite: '@mikecrowe',
+	twitterCreator: '@mikecrowe',
 	metaPages: [
 		{
 			url: 'https://github.com/drmikecrowe',
@@ -28,7 +31,7 @@ module.exports = {
 	opengraph: {
 		type: 'website',
 		// Default image to use when none is specified
-		image: '/images/share-1200x600.jpg',
+		image: '/assets/images/site/default.png',
 		// Opt-in to automatic generation of OpenGraph images
 		// If disabled, default images will be used
 		// If enabled, make sure you _like_ the way they look like
