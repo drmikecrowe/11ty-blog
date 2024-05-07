@@ -274,7 +274,7 @@ After discussions with another [Pinnacle consultant,](https://pinnsg.com/consult
 
 Letter A weights
 
-As you can see, the letter `a` occurs 3788 times in all the words, and it appears most frequently in position 2 (everything in Javascript is offset 0 based). So, if `a` occurs in position 1, we would add an additional `0.4242...` weight to the rank. Since all words appear somewhere, I like this idea for normalizing the location of the weight.
+As you can see, the letter `a` occurs 3788 times in all the words, and it appears most frequently in position 2 (everything in JavaScript is offset 0 based). So, if `a` occurs in position 1, we would add an additional `0.4242...` weight to the rank. Since all words appear somewhere, I like this idea for normalizing the location of the weight.
 
 Additionally, he pointed out that we really want more vowels since those are vital to a word. In the above image, you can see I’m adding `0.4` because it’s a vowel.
 

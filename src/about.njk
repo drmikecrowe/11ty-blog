@@ -1,14 +1,18 @@
 ---
+title: About Title # will be overwritten by SEO.title below
+date: 2023-04-17
 layout: page
-pagination: 
-  data: authors
-  size: 1
-  alias: author
-permalink: "/authors/{{ author.slug }}/"
-eleventyComputed:
-  title: "{{ author.name }}"
+eleventyNavigation:
+  key: main
+  title: About # as it will appear in the nav
+  order: 2 # order to display in the nav
+seo:
+  title: About Me # overrides 'title' above on both Page and META
+  description:
+  image:
 ---
 
+{% for author in authors %}
 {% columns %}
 {% cols "flex-none" %}
 <p>
@@ -76,3 +80,5 @@ eleventyComputed:
   </ul>
 
 </div>
+
+{% endfor %}
