@@ -12,6 +12,7 @@ tags:
   - tech
   - python
   - databricks
+  - pinnacle
 author: mike-crowe
 seo:
   title:

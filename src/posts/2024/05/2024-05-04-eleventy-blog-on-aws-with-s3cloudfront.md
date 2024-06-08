@@ -11,6 +11,9 @@ excerpt: "This post is about setting up an Eleventy blog with AWS S3 and CloudFr
 tags:
   - tech
   - eleventy
+  - aws 
+  - pulumi
+  - pinnacle
 author: mike-crowe
 seo:
   title:

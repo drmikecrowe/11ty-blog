@@ -30,7 +30,7 @@ dd a {
 	@apply font-medium text-indigo-700;
 }
 p {
-	@apply mt-4;
+	@apply mt-4 mb-4;
 }
 .wrapper > p:first-of-type {
 	@apply p-0 m-0;
