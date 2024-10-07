@@ -42,6 +42,50 @@
           "title": "Categories",
           "name": "categories",
           "type": "categories"
+        },
+        {
+          "title": "seo",
+          "name": "seo",
+          "type": "fields",
+          "fields": [
+            {
+              "title": "title",
+              "name": "title",
+              "type": "datetime"
+            },
+            {
+              "title": "description",
+              "name": "description",
+              "type": "datetime"
+            },
+            {
+              "title": "image",
+              "name": "image",
+              "type": "image"
+            }
+          ]
+        },
+        {
+          "title": "images",
+          "name": "images",
+          "type": "fields",
+          "fields": [
+            {
+              "title": "feature",
+              "name": "feature",
+              "type": "string"
+            },
+            {
+              "title": "thumb",
+              "name": "thumb",
+              "type": "datetime"
+            },
+            {
+              "title": "slide",
+              "name": "slide",
+              "type": "datetime"
+            }
+          ]
         }
       ]
     }
