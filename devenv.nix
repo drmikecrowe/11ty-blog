@@ -11,6 +11,7 @@
     pkgs.nodePackages.quicktype
     pkgs.aws-sso-cli
     pkgs.pulumi
+    pkgs.awscli2
     pkgs.pulumiPackages.pulumi-language-nodejs
   ];
   languages.javascript = {

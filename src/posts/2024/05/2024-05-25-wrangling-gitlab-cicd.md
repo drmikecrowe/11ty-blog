@@ -5,7 +5,7 @@ date: 2024-05-25
 updated:
   - ''
 preview: ''
-draft: true
+draft: false
 categories:
   - Pinnacle
 type: default

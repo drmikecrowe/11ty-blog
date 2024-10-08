@@ -10,13 +10,14 @@ tags:
    - vscode
 categories:
    - personal
+author: mike-crowe
 seo:
    title: null
    description: null
    image: 2024/10/VPEM-apply.gif
 images:
    feature:  2024/10/Extension-Images.png
-   thumb: null
+   thumb: 2024/10/Extension-Images.png
    slide:  null
 ---
 
@@ -30,27 +31,27 @@ Executables are built using [pyinstaller](https://github.com/pyinstaller/pyinsta
 
 ## Why?
 
-I tend to use a lot of extensions.  Further, I find my self swithing frequently between TypeScript, Python and now C#.  Sometimes I work in Azure.  Othertimes in AWS.
+I tend to use a lot of extensions.  Further, I find myself switching frequently between TypeScript, Python, and now C#.  Sometimes I work in Azure.  Other times in AWS.
 
 I realized that multiple profiles might make more sense than tons of extensions in a single profile.  However, it's also really easy to experiment with extensions and leave unused ones polluting the profile.  This tool helps me keep things organized.
 
 For example, here's how to apply a group of extensions to a profile:
 
-![Apply Extensions](/assets/images/2024/10/VPEM-apply-example.png)
+![Apply Extensions](https://www.mikesshinyobjects.tech/assets/images/2024/10/VPEM-apply-example.png)
 
 ## Process
 
 - First, dump your extensions for all your profiles
 
-![Dump Extensions](/assets/images/2024/10/VPEM-dump.gif)
+![Dump Extensions](https://www.mikesshinyobjects.tech/assets/images/2024/10/VPEM-dump.gif)
 
 - Next, categorizing extensions by searching for common strings and assign to categories
 
-![Categorize Extensions](/assets/images/2024/10/VPEM-categorize.gif)
+![Categorize Extensions](https://www.mikesshinyobjects.tech/assets/images/2024/10/VPEM-categorize.gif)
 
 - Finally, apply extensions to a profile
 
-![Apply Extensions](/assets/images/2024/10/VPEM-apply.gif)
+![Apply Extensions](https://www.mikesshinyobjects.tech/assets/images/2024/10/VPEM-apply.gif)
 
 ## Installation
 

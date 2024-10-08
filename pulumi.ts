@@ -4,6 +4,8 @@ import * as fs from 'fs'
 import * as mime from 'mime'
 import * as path from 'path'
 
+import { local } from '@pulumi/command'
+
 const stackConfig = new pulumi.Config()
 
 const config = {
@@ -226,6 +228,15 @@ const distributionArgs: aws.cloudfront.DistributionArgs = {
 
 const cdn = new aws.cloudfront.Distribution('cdn', distributionArgs)
 
+const distributionId = cdn.id
+const invalidationCommand = new local.Command(
+	'invalidate',
+	{
+		create: pulumi.interpolate`aws cloudfront create-invalidation --distribution-id ${distributionId} --paths /`,
+	},
+	{ dependsOn: [contentBucket] },
+)
+
 function getDomainAndSubdomain(domain: string): {
 	subdomain: string
 	parentDomain: string
@@ -315,3 +326,4 @@ export const contentBucketUri = pulumi.interpolate`s3://${contentBucket.bucket}`
 export const contentBucketWebsiteEndpoint = contentBucket.websiteEndpoint
 export const cloudFrontDomain = cdn.domainName
 export const targetDomainEndpoint = `https://${config.targetDomain}/`
+export const command = invalidationCommand
