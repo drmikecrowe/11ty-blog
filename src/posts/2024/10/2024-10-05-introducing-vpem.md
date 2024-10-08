@@ -3,8 +3,8 @@ title: Introducing VPEM-Visual Studio Profile Extension Manager
 description: |
    VPEM is designed to help you manage your VSCode extensions across different profiles. It provides dumping, categorizing, and applying to individual profiles
 date: 2024-10-05T10:11:00.050Z
-preview: /images/2024/10/VPEM-apply.gif
-draft: true
+preview: 2024/10/VPEM-apply.gif
+draft: false
 tags:
    - tech
    - vscode
@@ -13,16 +13,12 @@ categories:
 seo:
    title: null
    description: null
-   image: /images/2024/10/VPEM-apply.gif
+   image: 2024/10/VPEM-apply.gif
 images:
-   feature: 2024/10/Extension-Images.png
+   feature:  2024/10/Extension-Images.png
    thumb: null
-   slide: null
+   slide:  null
 ---
-
-![vscode-extensions](2024/10/Extension-Images.png)
-
-# VS Code Profile Extension Manager (VPEM)
 
 VS Code Profile Extension Manager (VPEM) is a powerful command-line tool designed to help you manage your Visual Studio Code extensions across different profiles. It allows you to dump, categorize, and apply extensions with ease, streamlining your VS Code setup process.
 
@@ -40,21 +36,21 @@ I realized that multiple profiles might make more sense than tons of extensions 
 
 For example, here's how to apply a group of extensions to a profile:
 
-![Apply Extensions](https://github.com/drmikecrowe/vscode-profile-extension-manager/blob/main/assets/VPEM-apply-example.png)
+![Apply Extensions](/assets/images/2024/10/VPEM-apply-example.png)
 
 ## Process
 
 - First, dump your extensions for all your profiles
 
-![Dump Extensions](https://github.com/drmikecrowe/vscode-profile-extension-manager/blob/main/assets/VPEM-dump.gif)
+![Dump Extensions](/assets/images/2024/10/VPEM-dump.gif)
 
 - Next, categorizing extensions by searching for common strings and assign to categories
 
-![Categorize Extensions](https://github.com/drmikecrowe/vscode-profile-extension-manager/blob/main/assets/VPEM-categorize.gif)
+![Categorize Extensions](/assets/images/2024/10/VPEM-categorize.gif)
 
 - Finally, apply extensions to a profile
 
-![Apply Extensions](https://github.com/drmikecrowe/vscode-profile-extension-manager/blob/main/assets/VPEM-apply.gif)
+![Apply Extensions](/assets/images/2024/10/VPEM-apply.gif)
 
 ## Installation
 

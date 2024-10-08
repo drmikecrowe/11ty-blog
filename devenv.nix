@@ -9,6 +9,9 @@
     pkgs.nodePackages.npm-check-updates
     pkgs.nodePackages.prettier
     pkgs.nodePackages.quicktype
+    pkgs.aws-sso-cli
+    pkgs.pulumi
+    pkgs.pulumiPackages.pulumi-language-nodejs
   ];
   languages.javascript = {
     directory = "project";

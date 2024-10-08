@@ -85,6 +85,8 @@ module.exports = function (eleventyConfig) {
 			)
 	})
 
+	console.log(eleventyConfig)
+
 	// TAGLIST used from the official eleventy-base-blog  https://github.com/11ty/eleventy-base-blog/blob/master/.eleventy.js
 	eleventyConfig.addCollection('tagList', function (collection) {
 		let tagSet = new Set()
