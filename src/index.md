@@ -4,7 +4,7 @@ layout: page
 excerpt: # used for page excerpts and META (will be overwritten if SEO used below)
 author: mike-crowe # only displayed on Post lists and detail views. Defaults to _data/meta.authorURL
 eleventyNavigation: # Required if want to display in Main Nav Bar
-  key: main 
+  key: main
   title: Welcome # as it will appear in the nav
   order: 1 # order to display in the nav (index = 1)
 seo: # SEO values are used for OG and will overwrite 'title' and 'excerpt' above
@@ -23,7 +23,7 @@ heroSettings:
     video:
     opacityMobile: opacity-50 # options opacity-n, 5, 10, 15, 20, 25, 50, 75, 100 (default)
     opacityDesktop: opacity-75 # Leave blank to inherit opacityMobile, use same options as opacityMobile
-  headingText: Thoughts, Solutions, Creations and things that make me go Ah-Ha
+  headingText: Thoughts, Solutions, Creations and my Ah-Ha moments
   headingTextColor: # default = text-white (can use any TailwindCSS text-[color]-[xxx])
   headingTextCase: # default = as typed - options: uppercase, lowercase, capitalize
   subheadingText: |
@@ -33,18 +33,10 @@ heroSettings:
 
     <p>And yes, the crow theme is a play on my name and the urban legend that crow's like shiny objects.  Of course, it's not really a thing, but it sure feels like it should be.  It does make for a great blog title tho...<p>
 
-  buttonText: # no button generated if left blank
-  buttonURL: # full url required. Example: https://thisdomain.com/somepage/
+  buttonText: Find Something Shiny
+  buttonURL: https://mikesshinyobjects.tech/blog/
   buttonTextColor: # leave blank to inherit from /src/_data/colors.buttonCustom or buttonDefault
   buttonBgColor: # leave blank to inherit from /src/_data/colors.buttonCustom.bg or buttonDefault.bg
   buttonBgHover: # leave blank to inherit from /src/_data/colors.buttonCustom.bgHover or buttonDefault.bgHover
   buttonBorder: # leave blank to inherit from /src/_data/colors.buttonCustom.border or buttonDefault.border
 ---
-
-## Latest Blog Posts
-
-<ol class="pt-4">
-{%- for post in collections.post | reverse | limit(10) -%}
-  <li><a class="underline" href="{{ post.url }}">{{ post.data.title }}</a></li>
-{%- endfor -%}
-</ol>

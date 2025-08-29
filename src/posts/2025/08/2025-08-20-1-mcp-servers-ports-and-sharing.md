@@ -1,8 +1,10 @@
 ---
+layout: post
 title: MCP Servers, Ports, and Sharing - Part 1 of 6
 description: A guide to managing MCP servers, avoiding port conflicts, and keeping your digital workspace organized
 date: 2025-08-20T00:00:00.000Z
-preview: ""
+permalink: /posts/2025-08-1-mcp-servers-ports-and-sharing/
+preview: ''
 draft: false
 categories:
   - tech
@@ -16,16 +18,14 @@ tags:
   - tmux
 author: mike-crowe
 seo:
-  title: "MCP Servers, Ports, and Sharing: A Guide to Not Tripping Over Your Own Feet - Part 1 of 5"
+  title: 'MCP Servers, Ports, and Sharing: A Guide to Not Tripping Over Your Own Feet - Part 1 of 5'
   description: Learn how to manage MCP servers, avoid port conflicts, and organize your AI development environment with tmux and custom scripts.
-  image: 2025/08/mcp-servers-tmux.png
+  image: 2025/08/ai-image-box.jpeg
 images:
-  feature: 2025/08/mcp-servers-tmux.png
-  thumb: 2025/08/mcp-servers-tmux.png
+  feature: 2025/08/ai-image-box.jpeg
+  thumb: 2025/08/ai-image-box.jpeg
   slide:
 ---
-
-# MCP Servers, Ports, and Sharing: A Guide to Not Tripping Over Your Own Feet
 
 **Part 1 of 6: The AI-Assisted Development Workflow Series**
 
@@ -33,7 +33,7 @@ This is the first installment in a five-part series exploring how AI is transfor
 
 **Series Overview:**
 
-- **Part 1 (This Post):** MCP Servers, Ports, and Sharing - Setting up the foundation
+- **Part 1:** MCP Servers, Ports, and Sharing - Setting up the foundation
 - **Part 2:** ESLint Configuration Refactoring - Cleaning up tooling with AI
 - **Part 3:** Custom Architectural Rules - Teaching AI to enforce design patterns
 - **Part 4:** Task Orchestration - Managing complex refactoring workflows
@@ -64,7 +64,39 @@ So when we say "MCP server," we're really talking about a specialized client tha
 
 Where this can get really confusing is if the tool you are wanting to use also requires communicating with a server. I really like [BrowserTools MCP](https://browsertools.agentdesk.ai). This tool exposes your console logs to your browser, giving it access to your frontend development logs as you make changes. It's a complex tool, though, which requires:
 
-<table>
+<style>
+.mcp-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.5rem 0;
+  font-size: 0.95rem;
+}
+
+.mcp-table th {
+  background-color: #f8f9fa;
+  border: 2px solid #dee2e6;
+  padding: 12px 16px;
+  text-align: left;
+  font-weight: 600;
+  color: #495057;
+}
+
+.mcp-table td {
+  border: 1px solid #e9ecef;
+  padding: 12px 16px;
+  vertical-align: top;
+}
+
+.mcp-table tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.mcp-table tr:hover {
+  background-color: #e9ecef;
+}
+</style>
+
+<table class="mcp-table">
 <thead>
 <tr>
 <th><strong>Component</strong></th>
@@ -288,6 +320,7 @@ Now, when I want to start up my MCP environment, I just run `./start-mcp-servers
 
 Here's what it looks like:
 
-![My tmux session with MCP servers running](start-mcp-servers.png)
+![My tmux session with MCP servers running](/assets/images/2025/08/start-mcp-servers.png)
 
 This setup makes it easy to see what's going on with each server, and I can easily restart a server if it crashes. It's a simple solution, but it's made my life a lot easier. And, most importantly, it keeps me from tripping over my own digital feet.
+m tripping over my own digital feet.

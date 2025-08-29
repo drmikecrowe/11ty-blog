@@ -40,7 +40,7 @@
     "refresh": "aws-sso exec -p personal-mike-AdministratorAccess pulumi refresh -fy",
     "aws-shell": "aws-sso exec -p personal-mike-AdministratorAccess fish",
     "deploy": "pnpm run build && pnpm run deploy:aws",
-    "deploy:aws": "aws-sso exec -S personal -p personal-mike-AdministratorAccess -- pulumi up"
+    "deploy:aws": "aws-sso exec -S personal -p personal-mike-AdministratorAccess -- pulumi up -y"
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
@@ -63,10 +63,11 @@
     "@types/mime": "~3.0.4",
     "@types/node": "^20",
     "alpinejs": "^3.14.1",
-    "caniuse-lite": "^1.0.30001667",
+    "caniuse-lite": "^1.0.30001736",
     "concurrently": "^6.5.1",
     "debug": "^4.3.7",
     "dotenv": "^16.4.5",
+    "eleventy-plugin-broken-links": "^2.2.1",
     "eleventy-plugin-icons": "^4.5.1",
     "eleventy-plugin-svg-sprite": "^2.4.2",
     "feather-icons": "^4.29.2",

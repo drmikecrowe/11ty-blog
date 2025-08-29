@@ -5,6 +5,7 @@ module.exports = {
 		'./src/**/*.html',
 		'./src/**/*.njk',
 		'./src/**/*.md',
+		'./src/posts/**/*.md',
 		'./src/_data/colors.js',
 		'./src/_data/structure.js',
 	],

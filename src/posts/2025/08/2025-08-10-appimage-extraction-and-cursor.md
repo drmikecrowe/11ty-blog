@@ -1,8 +1,9 @@
 ---
-title: "When AppImages Fail You: Building a Robust Extraction Tool (and Why Cursor Drove Me to It)"
+layout: post
+title: 'When AppImages Fail You: Building a Robust Extraction Tool (and Why Cursor Drove Me to It)'
 description: "AppImages promise universal Linux compatibility, but FUSE dependencies and runtime quirks often break that promise. Here's how I built a reliable extraction-based installer after Cursor's AppImage left me hanging."
 date: 2025-08-10T14:30:00.000Z
-preview: 
+preview:
 draft: false
 tags:
   - tech
@@ -16,10 +17,10 @@ author: mike-crowe
 seo:
   title: null
   description: null
-  image: null
+  image: 2025/08/shell-script.jpeg
 images:
-  feature: null
-  thumb: null
+  feature: 2025/08/shell-script.jpeg
+  thumb: 2025/08/shell-script.jpeg
   slide: null
 ---
 
@@ -33,10 +34,10 @@ Then reality hits.
 
 ## The Cursor Catalyst
 
-This whole adventure started when I decided to try [Cursor](https://cursor.sh/), the AI-powered code editor that's my daily code editor.  Unfortunately, it's not updated frequently in AUR, so I decided to try the AppImage.  When I tried to run it, I got the following error:
+This whole adventure started when I decided to try [Cursor](https://cursor.sh/), the AI-powered code editor that's my daily code editor. Unfortunately, it's not updated frequently in AUR, so I decided to try the AppImage. When I tried to run it, I got the following error:
 
 ```bash
-$ ./Cursor-1.4.3.AppImage 
+$ ./Cursor-1.4.3.AppImage
 zsh: no such file or directory: ./Cursor-1.4.3.AppImage
 ```
 
@@ -47,7 +48,7 @@ mise ERROR Cursor-1.4.3-x86_64_5054c3a796764b4195108ade2714e281.AppImage is not 
 mise ERROR Run with --verbose or MISE_VERBOSE=1 for more information
 ```
 
-Regardless, this was a nogo for me, because [mise](https://mise.jdx.dev/) has replaced direnv for me and I use it everywhere.  Perplexity informed me:
+Regardless, this was a nogo for me, because [mise](https://mise.jdx.dev/) has replaced direnv for me and I use it everywhere. Perplexity informed me:
 
 > Mise can be run in many environments, but there are common issues when using mise within AppImages (such as when using the Cursor editor as an AppImage), especially with advanced shell integrations and shims. The error message you are seeing—"AppImage is not a valid shim. This likely means you uninstalled a tool and the shim does not point to anything"—is a known problem occurring specifically in AppImage-packed shells and terminals, often with Zsh.
 
@@ -166,7 +167,7 @@ This isn't just about avoiding FUSE dependencies (though that's nice). It's abou
 
 - **No Runtime Dependencies**: No FUSE, no AppImage runtime, no mysterious failures
 - **Faster Startup**: No filesystem mounting overhead
-- **Better Integration**: Standard desktop entries that every DE understands  
+- **Better Integration**: Standard desktop entries that every DE understands
 - **Cleaner Updates**: Idempotent installs based on actual app names
 - **Troubleshooting**: When something breaks, you can inspect the extracted files directly
 
@@ -176,7 +177,7 @@ The funny thing? By avoiding the AppImage runtime entirely, I ended up with a mo
 
 ## Open Source and Available
 
-I've released the [AppImage Extract Installer](https://github.com/drmikecrowe/appimage-extract-installer) under Apache 2.0. It's a single bash script with no dependencies beyond standard Linux utilities (though `squashfs-tools` and `binwalk` enable the enhanced extraction features).
+I've released the [AppImage Extract Installer](https://github.com/drmikecrowe/appimage-extracted-installer/) under Apache 2.0. It's a single bash script with no dependencies beyond standard Linux utilities (though `squashfs-tools` and `binwalk` enable the enhanced extraction features).
 
 If you're dealing with AppImage frustrations, give it a try. And if you find bugs or have suggestions, the issue tracker is open.
 
@@ -184,4 +185,4 @@ Sometimes the best way to fix a technology is to work around it entirely.
 
 ---
 
-*Have your own AppImage horror stories? Found a better solution? Hit me up on [GitHub](https://github.com/drmikecrowe) or wherever you found this post. I'm always interested in hearing how others solve these kinds of practical problems.*
+_Have your own AppImage horror stories? Found a better solution? Hit me up on [GitHub](https://github.com/drmikecrowe) or wherever you found this post. I'm always interested in hearing how others solve these kinds of practical problems._

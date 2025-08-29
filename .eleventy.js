@@ -12,6 +12,8 @@ const filters = require('./utils/filters.js')
 const shortcodes = require('./utils/shortcodes.js')
 const pairedshortcodes = require('./utils/paired-shortcodes.js')
 // const transforms = require('./utils/transforms.js')
+//
+const brokenLinksPlugin = require('eleventy-plugin-broken-links')
 
 module.exports = function (eleventyConfig) {
 	/**
@@ -22,6 +24,7 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPlugin(pluginRss)
 	eleventyConfig.addPlugin(pluginNavigation)
 	eleventyConfig.addPlugin(syntaxHighlight)
+	eleventyConfig.addPlugin(brokenLinksPlugin)
 	eleventyConfig.addPlugin(pluginIcons, {
 		sources: [{ name: 'simple', path: 'node_modules/simple-icons/icons' }],
 		sources: [{ name: 'lucide', path: 'node_modules/lucide-static/icons' }],
@@ -43,10 +46,10 @@ module.exports = function (eleventyConfig) {
 	/**
 	 * Transforms
 	 * @link https://www.11ty.io/docs/config/#transforms
-   Object.keys(transforms).forEach((transformName) => {
-     eleventyConfig.addTransform(transformName, transforms[transformName])
-    })
-    */
+	 Object.keys(transforms).forEach((transformName) => {
+		 eleventyConfig.addTransform(transformName, transforms[transformName])
+		})
+		*/
 
 	/**
 	 * Shortcodes
@@ -134,9 +137,9 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy('src/*.jpg')
 	eleventyConfig.addPassthroughCopy('src/*.ico')
 	eleventyConfig.addPassthroughCopy('src/robots.txt')
-	eleventyConfig.addPassthroughCopy('src/assets/images/')
-	eleventyConfig.addPassthroughCopy('src/assets/svg/')
-	eleventyConfig.addPassthroughCopy('src/assets/video/')
+	eleventyConfig.addPassthroughCopy('src/assets/images/**/*')
+	eleventyConfig.addPassthroughCopy('src/assets/svg/**/*')
+	eleventyConfig.addPassthroughCopy('src/assets/video/**/*')
 
 	/**
 	 * Set custom markdown library instance...
