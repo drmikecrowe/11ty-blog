@@ -1,0 +1,9 @@
+{{ define "main" }}
+  <section class="flex-ns mt5 flex-wrap justify-around">
+      {{ range .Pages }}
+        <div class="w-100 w-30-l mb4 relative bg-white">
+          {{ partial "summary-with-image-local.html" . }}
+        </div>
+      {{ end }}
+    </section>
+{{ end }}

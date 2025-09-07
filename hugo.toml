@@ -1,0 +1,68 @@
+baseURL = 'https://mikesshinyobjects.tech/'
+languageCode = 'en-us'
+title = "Mike's Shiny Objects"
+theme = 'ananke'
+
+[params]
+  author = "Mike Crowe"
+  description = "Thoughts, Solutions, Creations and my Ah-Ha moments"
+  hero = "/images/home/hero.webp"
+  favicon = "/favicon.ico"
+  featured_image = "/images/home/hero.webp"
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts"
+    weight = 2
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+# Production settings
+enableRobotsTXT = true
+canonifyURLs = true
+
+[sitemap]
+  changefreq = 'weekly'
+  filename = 'sitemap.xml'
+  priority = 0.5
+
+paginate = 10
+
+[params.ananke.social.follow]
+new_window_icon = false
+networks = [
+  "bluesky",
+  "medium",
+  "linkedin",
+  "github",
+  "rss"
+]
+
+[params.ananke.social.linkedin]
+username = "mwcrowe"
+
+[params.ananke.social.bluesky]
+username = "drmikecrowe.net"
+
+[params.ananke.social.medium]
+username = "drmikecrowe"
+
+[params.ananke.social.github]
+username = "drmikecrowe"
+
+[params.ananke.social.rss]
+
+[deployment]
+[[deployment.targets]]
+name = "prod"
+url = "s3://mikesshinyobjects.tech"
+cloudFrontDistributionID = "E230DHNOI4UQRZ"
