@@ -60,6 +60,7 @@ username = "drmikecrowe"
 username = "drmikecrowe"
 
 [params.ananke.social.rss]
+profilelink = "/index.xml"
 
 [deployment]
 [[deployment.targets]]
