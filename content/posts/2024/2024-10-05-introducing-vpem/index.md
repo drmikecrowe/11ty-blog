@@ -3,6 +3,8 @@ title: Introducing VPEM-Visual Studio Profile Extension Manager
 description: |
   VPEM is designed to help you manage your VSCode extensions across different profiles. It provides dumping, categorizing, and applying to individual profiles
 date: 2024-10-05T10:11:00.050Z
+aliases:
+  - /2024/10/05/introducing-vpem-visual-studio-profile-extension-manager/
 preview: 2024/10/VPEM-apply.gif
 draft: false
 tags:

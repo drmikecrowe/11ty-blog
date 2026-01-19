@@ -35,6 +35,24 @@ canonifyURLs = true
   filename = 'sitemap.xml'
   priority = 0.5
 
+# Disable tag/category pages from sitemap (they often get flagged as thin content)
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+# Set lower priority for taxonomy pages
+[[cascade]]
+  [cascade._target]
+    kind = "term"
+  [cascade.sitemap]
+    priority = 0.3
+
+[[cascade]]
+  [cascade._target]
+    kind = "taxonomy"
+  [cascade.sitemap]
+    priority = 0.1
+
 paginate = 10
 
 [params.ananke.social.follow]

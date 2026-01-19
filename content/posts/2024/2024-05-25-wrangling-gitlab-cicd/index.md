@@ -2,6 +2,8 @@
 title: Wrangling Gitlab CI/CD in Monorepos
 description: "Managing monorepo node-modules cache, Using Anchors, Stages and Dependencies, and other weird quirks of Gitlab's CI/CD Engine."
 date: 2024-05-25
+aliases:
+  - /2024/05/25/wrangling-gitlab-cicd-in-monorepos/
 updated:
   - ""
 preview: ""

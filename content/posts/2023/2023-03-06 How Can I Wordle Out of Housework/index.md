@@ -1,6 +1,8 @@
 ---
 title: How Can I Wordle Out of Housework
 date: 2022-03-06
+aliases:
+  - /2022/03/06/how-can-i-wordle-out-of-housework/
 excerpt: I'm obsessing about the best wordle start words
 tags:
   - tech

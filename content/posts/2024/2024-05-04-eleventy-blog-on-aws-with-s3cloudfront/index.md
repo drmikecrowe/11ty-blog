@@ -2,6 +2,8 @@
 title: Eleventy Blog on AWS with S3/CloudFront
 description: ""
 date: 2024-05-04T23:36:31.476Z
+aliases:
+  - /2024/05/04/eleventy-blog-on-aws-with-s3cloudfront/
 preview: ""
 draft: false
 categories:

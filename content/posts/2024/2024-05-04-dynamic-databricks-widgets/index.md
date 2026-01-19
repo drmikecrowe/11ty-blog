@@ -2,6 +2,8 @@
 title: Dynamic Databricks Widgets
 description: ""
 date: 2024-05-04T16:25:19.053Z
+aliases:
+  - /2024/05/04/dynamic-databricks-widgets/
 preview: ""
 draft: false
 categories:

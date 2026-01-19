@@ -2,6 +2,8 @@
 title: Databricks Multiple Filters using a Python Lambda statement
 description: ""
 date: 2024-04-28T22:35:26.033Z
+aliases:
+  - /2024/04/28/databricks-multiple-filters-using-a-python-lambda-statement/
 preview: ""
 draft: false
 categories:
