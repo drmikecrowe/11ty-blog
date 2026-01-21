@@ -1,6 +1,12 @@
+{{ define "header" }}
+  {{ partials.Include "page-header.html" . }}
+{{ end }}
+
 {{ define "main" }}
   <article class="pa3 pa4-ns nested-copy-line-height">
-    <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy nested-links {{ $.Param "text_color" | compare.Default "mid-gray" }}">
+    <section class="ph3 ph5-l pv3 pv4-l">
+      {{ partials.Include "watching-breadcrumbs.html" . }}
+      <h1 class="f2 fw2 mt3 mb4">Movies We've Recently Watched</h1>
       {{- .Content -}}
     </section>
 

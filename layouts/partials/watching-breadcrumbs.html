@@ -1,0 +1,23 @@
+{{/* Breadcrumbs for watching section */}}
+<nav class="f6 fw4 gray mb3" aria-label="Breadcrumb">
+  <a href="/watching/" class="link dim gray">Watching</a>
+  {{ if findRE "/watching/tv/" .Permalink }}
+  <span class="mh1">/</span>
+  {{ if .IsPage }}
+  <a href="/watching/tv/" class="link dim gray">TV Shows</a>
+  <span class="mh1">/</span>
+  <span class="dark-gray">{{ .Title }}</span>
+  {{ else }}
+  <span class="dark-gray">TV Shows</span>
+  {{ end }}
+  {{ else if findRE "/watching/movies/" .Permalink }}
+  <span class="mh1">/</span>
+  {{ if .IsPage }}
+  <a href="/watching/movies/" class="link dim gray">Movies</a>
+  <span class="mh1">/</span>
+  <span class="dark-gray">{{ .Title }}</span>
+  {{ else }}
+  <span class="dark-gray">Movies</span>
+  {{ end }}
+  {{ end }}
+</nav>

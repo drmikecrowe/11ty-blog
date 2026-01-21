@@ -6,6 +6,7 @@
   {{ $featured_image := partials.Include "func/GetFeaturedImage.html" . }}
   <article class="mw8 center ph3">
     <header class="mt4">
+      {{ partials.Include "watching-breadcrumbs.html" . }}
       <aside class="instapaper_ignoref b helvetica tracked ttu">
         {{ .CurrentSection.Title }}
       </aside>
