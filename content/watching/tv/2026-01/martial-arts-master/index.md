@@ -2,7 +2,7 @@
 title: "Martial Arts Master"
 description: "Our thoughts on Martial Arts Master"
 date: 2026-01-21
-draft: true
+draft: false
 tags:
   - 2026
   - highly-recommend

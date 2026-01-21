@@ -2,7 +2,7 @@
 title: "A Knight of the Seven Kingdoms"
 description: "Our thoughts on A Knight of the Seven Kingdoms"
 date: 2026-01-21
-draft: true
+draft: false
 tags:
   - 2026
 author: Mike Crowe
