@@ -6,78 +6,77 @@
   </section>
 
   <section class="mt5 ph3 ph5-l">
-    <!-- Highly Recommended -->
+    {{- $all := where .Site.RegularPages "Section" "watching" -}}
+    {{- $all = where $all "Kind" "page" -}}
+    {{- $recommended := where $all "Params.tags" "intersect" (slice "highly-recommended") -}}
+    {{- $worth := where $all "Params.tags" "intersect" (slice "worth-watching") -}}
+    {{- $recRanked := where $recommended "Params.rank" "!=" nil -}}
+    {{- $recUnranked := where $recommended "Params.rank" "==" nil -}}
+    {{- $recSorted := $recRanked.ByParam "rank" | append $recUnranked -}}
+    {{- $worthRanked := where $worth "Params.rank" "!=" nil -}}
+    {{- $worthUnranked := where $worth "Params.rank" "==" nil -}}
+    {{- $worthSorted := $worthRanked.ByParam "rank" | append $worthUnranked -}}
+
+    <!-- Highly Recommended Movies -->
     <details class="mb4">
       <summary class="f3 fw2 pointer bg-near-white hover-bg-moon-gray pa3 b--moon-gray">
-        Highly Recommended
+        Highly Recommended Movies
       </summary>
       <div class="flex flex-wrap pt3 nl2 nr2">
-        {{ $all := where .Site.RegularPages "Section" "watching" }}
-        {{ $all = where $all "Kind" "page" }}
-        {{ $recommended := where $all "Params.tags" "intersect" (slice "highly-recommended") }}
-        {{ $ranked := where $recommended "Params.rank" "!=" nil }}
-        {{ $unranked := where $recommended "Params.rank" "==" nil }}
-        {{ $sorted := $ranked.ByParam "rank" | append $unranked }}
-        {{ range $sorted }}
-        <div class="w-50 w-third-m w-20-l pa2">
-          {{ .Render "poster-card" }}
-        </div>
+        {{ range $recSorted }}
+          {{ if (findRE "/watching/movies/" .Permalink) }}
+          <div class="w-50 w-third-m w-20-l pa2">
+            {{ .Render "poster-card" }}
+          </div>
+          {{ end }}
         {{ end }}
       </div>
     </details>
 
-    <!-- Worth Watching -->
+    <!-- Highly Recommended TV -->
     <details class="mb4">
       <summary class="f3 fw2 pointer bg-near-white hover-bg-moon-gray pa3 b--moon-gray">
-        Worth Watching
+        Highly Recommended TV
       </summary>
       <div class="flex flex-wrap pt3 nl2 nr2">
-        {{ $all := where .Site.RegularPages "Section" "watching" }}
-        {{ $all = where $all "Kind" "page" }}
-        {{ $worth := where $all "Params.tags" "intersect" (slice "worth-watching") }}
-        {{ $ranked := where $worth "Params.rank" "!=" nil }}
-        {{ $unranked := where $worth "Params.rank" "==" nil }}
-        {{ $sorted := $ranked.ByParam "rank" | append $unranked }}
-        {{ range $sorted }}
-        <div class="w-50 w-third-m w-20-l pa2">
-          {{ .Render "poster-card" }}
-        </div>
+        {{ range $recSorted }}
+          {{ if (findRE "/watching/tv/" .Permalink) }}
+          <div class="w-50 w-third-m w-20-l pa2">
+            {{ .Render "poster-card" }}
+          </div>
+          {{ end }}
         {{ end }}
       </div>
     </details>
 
-    <!-- Movies -->
+    <!-- Worth Watching Movies -->
     <details class="mb4">
       <summary class="f3 fw2 pointer bg-near-white hover-bg-moon-gray pa3 b--moon-gray">
-        Movies
+        Worth Watching Movies
       </summary>
       <div class="flex flex-wrap pt3 nl2 nr2">
-        {{ $movies := where .Site.RegularPages "Section" "watching" }}
-        {{ $movies = where $movies "Kind" "page" }}
-        {{ range $movies.ByDate.Reverse }}
-        {{ if (findRE "/watching/movies/" .Permalink) }}
-        <div class="w-50 w-third-m w-20-l pa2">
-          {{ .Render "poster-card" }}
-        </div>
-        {{ end }}
+        {{ range $worthSorted }}
+          {{ if (findRE "/watching/movies/" .Permalink) }}
+          <div class="w-50 w-third-m w-20-l pa2">
+            {{ .Render "poster-card" }}
+          </div>
+          {{ end }}
         {{ end }}
       </div>
     </details>
 
-    <!-- TV Shows -->
+    <!-- Worth Watching TV -->
     <details class="mb4">
       <summary class="f3 fw2 pointer bg-near-white hover-bg-moon-gray pa3 b--moon-gray">
-        TV Shows
+        Worth Watching TV
       </summary>
       <div class="flex flex-wrap pt3 nl2 nr2">
-        {{ $tv := where .Site.RegularPages "Section" "watching" }}
-        {{ $tv = where $tv "Kind" "page" }}
-        {{ range $tv.ByDate.Reverse }}
-        {{ if (findRE "/watching/tv/" .Permalink) }}
-        <div class="w-50 w-third-m w-20-l pa2">
-          {{ .Render "poster-card" }}
-        </div>
-        {{ end }}
+        {{ range $worthSorted }}
+          {{ if (findRE "/watching/tv/" .Permalink) }}
+          <div class="w-50 w-third-m w-20-l pa2">
+            {{ .Render "poster-card" }}
+          </div>
+          {{ end }}
         {{ end }}
       </div>
     </details>

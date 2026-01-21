@@ -337,6 +337,7 @@ def generate_post(
     highly_recommended: bool,
     post_date: str,
     existing_data: dict = None,
+    new_rank: int = None,
 ) -> Path:
     """Generate Hugo post content and write to file."""
     today = datetime.now().strftime("%Y-%m-%d")
@@ -382,10 +383,12 @@ def generate_post(
         if highly_recommended:
             tags.append("highly-recommended")
 
-    # Preserve rank if updating
+    # Use existing rank if updating, or new_rank if provided
     rank = None
     if existing_data and existing_data.get("rank"):
         rank = existing_data["rank"]
+    elif new_rank:
+        rank = new_rank
 
     # Format genres for YAML
     genres_yaml = ", ".join(f'"{g}"' for g in genres) if genres else ""
@@ -487,6 +490,12 @@ def main():
         "--force",
         action="store_true",
         help="Overwrite if post already exists",
+    )
+    parser.add_argument(
+        "--rank",
+        type=int,
+        choices=[1, 2, 3, 4, 5],
+        help="Rank for recommended items (1=top, 5=good)",
     )
     parser.add_argument(
         "--date",
@@ -631,6 +640,7 @@ def main():
         args.highly_recommended,
         post_date,
         existing_data,
+        args.rank,
     )
 
     action = "Updated" if existing_data else "Created"

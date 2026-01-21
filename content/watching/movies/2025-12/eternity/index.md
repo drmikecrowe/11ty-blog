@@ -7,6 +7,7 @@ tags:
   - 2026
   - highly-recommended
   - rom-com
+rank: 3
 author: Mike Crowe
 show_reading_time: true
 featured_image: "images/hero.jpg"

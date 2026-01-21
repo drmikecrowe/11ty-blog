@@ -6,6 +6,7 @@ draft: false
 tags:
   - 2026
   - highly-recommended
+rank: 2
 author: Mike Crowe
 show_reading_time: true
 featured_image: "images/hero.jpg"
