@@ -1,0 +1,22 @@
+{{ $featured_image := partials.Include "func/GetFeaturedImage.html" . }}
+{{ $actors := "" }}
+{{ with findRESubmatch `\*\*Actors:\*\*\s*(.+)` .RawContent }}
+  {{ $actors = (index (index . 0) 1) }}
+{{ end }}
+<a href="{{ .RelPermalink }}" class="db link dim">
+  <article class="flex bg-white ba b--light-gray br2 overflow-hidden">
+    {{ if $featured_image }}
+    <div class="w-third flex-shrink-0" style="aspect-ratio: 2/3;">
+      <img src="{{ $featured_image }}" alt="{{ .Title }}" class="w-100 h-100" style="object-fit: cover;">
+    </div>
+    {{ end }}
+    <div class="pa3 flex flex-column justify-between {{ if not $featured_image }}w-100{{ else }}w-two-thirds{{ end }}">
+      <div>
+        <h3 class="f4 fw6 mt0 mb2 dark-gray">{{ .Title }}</h3>
+        {{ with .Params.year }}<span class="f6 gray db mb2">{{ . }}</span>{{ end }}
+        {{ with $actors }}<p class="f6 gray mt0 mb2">{{ . }}</p>{{ end }}
+      </div>
+      <span class="f7 ttu tracked blue">Read more →</span>
+    </div>
+  </article>
+</a>

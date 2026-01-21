@@ -1,0 +1,37 @@
+{{ define "main" }}
+  <article class="cf pa3 pa4-m pa4-l">
+    <div class="measure-wide-l center f4 lh-copy nested-copy-line-height nested-links {{ $.Param "text_color" | compare.Default "mid-gray" }}">
+      <h1 class="f2 fw1">{{ .Title }}</h1>
+      {{ with .Content }}
+        <div class="mv3">
+          {{- . -}}
+        </div>
+      {{ end }}
+      {{ if eq .CurrentSection.Title "Tags" }}
+        <p>Browse all content by tag. Find shows and movies marked as <a href="/tags/currently-watching/">currently watching</a>, <a href="/tags/highly-recommended/">highly recommended</a>, <a href="/tags/worth-watching/">worth watching</a>, or by year.</p>
+      {{ else if eq .Title "Currently-Watching" }}
+        <p>Shows and movies we're currently watching. Updated as we progress through new releases and catch up on our watchlist.</p>
+      {{ else if eq .Title "Highly-Recommended" }}
+        <p>Our top picks—shows and movies we enthusiastically recommend.</p>
+      {{ else if eq .Title "Worth-Watching" }}
+        <p>Solid picks—shows and movies we enjoyed and think are worth your time.</p>
+      {{ end }}
+    </div>
+  </div>
+  <div class="mw8 center ph3">
+    <section class="flex flex-wrap mt5 nl2 nr2">
+      {{- $pages := .Pages.ByDate.Reverse -}}
+      {{- if or (eq .Title "Highly-Recommended") (eq .Title "Worth-Watching") -}}
+        {{/* Sort by rank ascending (1 first), items without rank go to end */}}
+        {{- $ranked := where .Pages "Params.rank" "!=" nil -}}
+        {{- $unranked := where .Pages "Params.rank" "==" nil -}}
+        {{- $pages = $ranked.ByParam "rank" | append $unranked -}}
+      {{- end -}}
+      {{ range $pages }}
+        <div class="w-100 w-50-m w-third-l pa2">
+          {{ .Render "summary" }}
+        </div>
+      {{ end }}
+    </section>
+  </div>
+{{ end }}

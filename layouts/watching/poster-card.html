@@ -1,0 +1,14 @@
+{{ $featured_image := partials.Include "func/GetFeaturedImage.html" . }}
+<a href="{{ .RelPermalink }}" class="db link dim tc">
+  <div class="bg-light-gray" style="aspect-ratio: 2/3;">
+    {{ if $featured_image }}
+    <img src="{{ $featured_image }}" alt="{{ .Title }}" class="w-100 h-100" style="object-fit: cover;">
+    {{ else }}
+    <div class="w-100 h-100 flex items-center justify-center">
+      <span class="f4 gray">No Poster</span>
+    </div>
+    {{ end }}
+  </div>
+  <h3 class="f6 f5-ns fw4 mt2 mb0 dark-gray truncate">{{ .Title }}</h3>
+  {{ with .Params.year }}<span class="f7 gray">{{ . }}</span>{{ end }}
+</a>

@@ -1,0 +1,35 @@
+{{ define "header" }}
+  {{ partials.Include "page-header.html" . }}
+{{ end }}
+
+{{ define "main" }}
+  {{ $featured_image := partials.Include "func/GetFeaturedImage.html" . }}
+  <article class="mw8 center ph3">
+    <header class="mt4">
+      <aside class="instapaper_ignoref b helvetica tracked ttu">
+        {{ .CurrentSection.Title }}
+      </aside>
+      <h1 class="f1 athelas mt3 mb1">
+        {{- .Title -}}
+      </h1>
+      {{ with .Params.year }}<span class="f5 gray">{{ . }}</span>{{ end }}
+      {{ if not .Date.IsZero }}
+      <time class="f6 mv4 dib tracked" {{ fmt.Printf `datetime="%s"` (.Date.Format "2006-01-02T15:04:05Z07:00") | safe.HTMLAttr }}>
+        {{- .Date | time.Format (compare.Default "January 2, 2006" .Site.Params.date_format) -}}
+      </time>
+      {{ end }}
+    </header>
+
+    <div class="flex flex-column flex-row-l mt4">
+      {{ if $featured_image }}
+      <div class="w-100 w-third-l pr4-l mb4 mb0-l">
+        <img src="{{ $featured_image }}" alt="{{ .Title }}" class="w-100 shadow-1">
+      </div>
+      {{ end }}
+      <div class="w-100 {{ if $featured_image }}w-two-thirds-l{{ end }} nested-copy-line-height lh-copy serif f4 nested-links mid-gray">
+        {{- .Content -}}
+        {{- partials.Include "tags.html" . -}}
+      </div>
+    </div>
+  </article>
+{{ end }}
