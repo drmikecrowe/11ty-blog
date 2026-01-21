@@ -6,29 +6,29 @@ draft: false
 tags:
   - 2026
   - worth-watching
-  - drama
 rank: 3
 author: Mike Crowe
 show_reading_time: true
 featured_image: "images/hero.jpg"
 imdb_id: "tt22091076"
-imdb_rating: ""
-genres: []
+imdb_rating: 7.6
+genres: ["Comedy", "Crime", "Drama", "Mystery"]
 year: 2024
 ---
 
 # High Potential
 
-## IMDB
+## Our Thoughts
 
-- **Actors:** Kaitlin Olson, Daniel Sunjata
-- **Director:** Unknown
-- **Year:** 2024
+We know her from Sweet D in It's Always Sunny in Philadelphia, though she's also Jean Smart's daughter in Hacks. Wherever you know her from, she's amazing in this show. We really enjoy this, and they've got a fantastic cast that pulls us off.
 
 ## Summary
 
 A single mom with three kids helps solve an unsolvable crime when she rearranges some evidence during her shift as a police department cleaner.
 
-## Our Thoughts
+## IMDB
 
-We know her from Sweet D in It's Always Sunny in Philadelphia, though she's also Jean Smart's daughter in Hacks. Wherever you know her from, she's amazing in this show. We really enjoy this, and they've got a fantastic cast that pulls us off.
+- **Actors:** Kaitlin Olson, Daniel Sunjata, Judy Reyes
+- **Director:** Drew Goddard
+- **Year:** 2024
+- **IMDB Rating:** [7.6/10](https://www.imdb.com/title/tt22091076/)

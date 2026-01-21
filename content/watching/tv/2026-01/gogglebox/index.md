@@ -13,23 +13,24 @@ author: Mike Crowe
 show_reading_time: true
 featured_image: "images/hero.jpg"
 imdb_id: "tt2762330"
-imdb_rating: ""
-genres: []
+imdb_rating: 7.4
+genres: ["Documentary", "Reality-TV"]
 year: 2013
 ---
 
 # Gogglebox
 
-## IMDB
+## Our Thoughts
 
-- **Actors:** Craig Cash, Ralf Woerdenweber
-- **Director:** Unknown
-- **Year:** 2013
+When you look at what this show really is, British people watching TV, you're going to ask us how in the world we could recommend this. The only reason it works is because of the people that they have found who watch these shows. They're quick, funny, and they feel like your family after watching this for a while. If you can find it anywhere, it is so worth watching.
 
 ## Summary
 
 Some of Britain's most opinionated and avid TV viewers comment freely on the best and worst television shows of the past week, from the comfort of their sofas.
 
-## Our Thoughts
+## IMDB
 
-When you look at what this show really is, British people watching TV, you're going to ask us how in the world we could recommend this. The only reason it works is because of the people that they have found who watch these shows. They're quick, funny, and they feel like your family after watching this for a while. If you can find it anywhere, it is so worth watching.
+- **Actors:** Craig Cash, Ralf Woerdenweber, Josh Tapper
+- **Director:** Unknown
+- **Year:** 2013
+- **IMDB Rating:** [7.4/10](https://www.imdb.com/title/tt2762330/)

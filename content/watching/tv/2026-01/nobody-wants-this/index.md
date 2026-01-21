@@ -5,29 +5,29 @@ date: 2026-01-01
 draft: false
 tags:
   - 2026
-  - drama
   - netflix
 author: Mike Crowe
 show_reading_time: true
 featured_image: "images/hero.jpg"
 imdb_id: "tt26933824"
-imdb_rating: ""
-genres: []
+imdb_rating: 7.8
+genres: ["Comedy", "Drama", "Romance"]
 year: 2024
 ---
 
 # Nobody Wants This
 
-## IMDB
+## Our Thoughts
 
-- **Actors:** Kristen Bell, Adam Brody
-- **Director:** Unknown
-- **Year:** 2024
+I put this in here because it caught us off guard how much we enjoyed it. There was nothing about it that screamed to watch it. So we did it after seeing the Critics' Choice Awards. It treats religion respectfully and it's genuinely enjoyable.
 
 ## Summary
 
 An agnostic sex podcaster and a newly single rabbi fall in love; discovering if their relationship can survive their wildly different lives and meddling families.
 
-## Our Thoughts
+## IMDB
 
-I put this in here because it caught us off guard how much we enjoyed it. There was nothing about it that screamed to watch it. So we did it after seeing the Critics' Choice Awards. It treats religion respectfully and it's genuinely enjoyable.
+- **Actors:** Kristen Bell, Adam Brody, Justine Lupe
+- **Director:** Erin Foster
+- **Year:** 2024
+- **IMDB Rating:** [7.8/10](https://www.imdb.com/title/tt26933824/)

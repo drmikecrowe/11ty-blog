@@ -1,0 +1,27 @@
+{{/*
+	GetFeaturedImage - Local override to fix page bundle image matching
+
+	@return RelPermalink to featured image, or an empty string if not found.
+*/}}
+
+{{ $linkToCover := "" }}
+{{ $matches := "feature,cover,hero" }}
+
+{{ with .Params.featured_image }}
+  {{/* Try to match as a page resource first (supports subdirectories like images/hero.jpg) */}}
+  {{ with $.Resources.GetMatch (printf "**%s" .) }}
+    {{ $linkToCover = .RelPermalink }}
+  {{ else }}
+    {{/* Fallback to static directory */}}
+    {{ $linkToCover = . | strings.TrimPrefix "/" | urls.AbsURL }}
+  {{ end }}
+{{ else }}
+  {{/* Find the first image with 'cover', 'feature', or 'hero' in the name */}}
+  {{ with .Resources.ByType "image" }}
+    {{ with .GetMatch (printf "**{%s}*" $matches) }}
+      {{ $linkToCover = .RelPermalink }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ return $linkToCover }}

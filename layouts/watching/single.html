@@ -13,6 +13,13 @@
         {{- .Title -}}
       </h1>
       {{ with .Params.year }}<span class="f5 gray">{{ . }}</span>{{ end }}
+      {{ with .Params.genres }}
+      <div class="mt2">
+        {{ range . }}
+        <a href="{{ "/genres/" | relLangURL }}{{ . | urlize }}/" class="f6 link dim ba b--moon-gray ph2 pv1 mb2 mr1 dib gray">{{ . }}</a>
+        {{ end }}
+      </div>
+      {{ end }}
       {{ if not .Date.IsZero }}
       <time class="f6 mv4 dib tracked" {{ fmt.Printf `datetime="%s"` (.Date.Format "2006-01-02T15:04:05Z07:00") | safe.HTMLAttr }}>
         {{- .Date | time.Format (compare.Default "January 2, 2006" .Site.Params.date_format) -}}

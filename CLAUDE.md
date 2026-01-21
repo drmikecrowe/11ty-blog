@@ -25,6 +25,12 @@ hugo new posts/YYYY/YYYY-MM-DD-my-post-title/index.md
 # With specific archetype
 hugo new posts/my-series.md --kind series-post
 hugo new posts/my-tutorial.md --kind technical-tutorial
+
+# TV show review
+hugo new watching/tv/show-name/index.md --kind watching
+
+# Movie review
+hugo new watching/movies/movie-name/index.md --kind watching
 ```
 
 ### Deployment
@@ -56,7 +62,23 @@ content/
     YYYY/             # Posts organized by year
       YYYY-MM-DD-slug/
         index.md      # Post content (page bundles for images)
+  watching/
+    _index.md         # "What We're Watching" landing page
+    tv/
+      _index.md       # TV shows listing
+      show-name/
+        index.md      # Individual show review
+    movies/
+      _index.md       # Movies listing
+      movie-name/
+        index.md      # Individual movie review
 ```
+
+### Watching Tags
+
+- `currently-watching` - Shows/movies actively following
+- `highly-recommended` - Top picks
+- `2024`, `2025`, etc. - Year watched
 
 ### Theme Customization
 

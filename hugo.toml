@@ -23,6 +23,12 @@ theme = 'ananke'
     url = "/posts"
     weight = 2
 
+  [[menu.main]]
+    identifier = "watching"
+    name = "Watching"
+    url = "/watching"
+    weight = 3
+
 [markup.goldmark.renderer]
   unsafe = true
 
@@ -39,6 +45,8 @@ canonifyURLs = true
 [taxonomies]
   tag = "tags"
   category = "categories"
+  genre = "genres"
+  media_type = "media_types"
 
 # Set lower priority for taxonomy pages
 [[cascade]]

@@ -6,30 +6,30 @@ draft: false
 tags:
   - 2026
   - highly-recommend
-  - drama
   - british
 rank: 1
 author: Mike Crowe
 show_reading_time: true
 featured_image: "images/hero.jpg"
 imdb_id: "tt10590066"
-imdb_rating: ""
-genres: []
+imdb_rating: 8.6
+genres: ["Comedy", "Drama"]
 year: 2020
 ---
 
 # All Creatures Great & Small
 
-## IMDB
+## Our Thoughts
 
-- **Actors:** Samuel West, Anna Madeley
-- **Director:** Unknown
-- **Year:** 2020
+Find this show on whatever streaming platform you can because it is fantastic. This is one of the shows that we drop everything in order to watch.
 
 ## Summary
 
 James Herriot, fresh out of Glasgow Veterinary College, pursues his dream to become a vet in the Yorkshire Dales. He discovers that treating the animals is as much about treating their owners, and the Dales' farmers are a tough to please.
 
-## Our Thoughts
+## IMDB
 
-Find this show on whatever streaming platform you can because it is fantastic. This is one of the shows that we drop everything in order to watch.
+- **Actors:** Samuel West, Anna Madeley, Nicholas Ralph
+- **Director:** Unknown
+- **Year:** 2020
+- **IMDB Rating:** [8.6/10](https://www.imdb.com/title/tt10590066/)

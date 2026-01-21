@@ -81,6 +81,20 @@
         {{ end }}
       </div>
     </details>
+
+    <!-- Browse by Genre -->
+    <details class="mb4">
+      <summary class="f3 fw2 pointer bg-near-white hover-bg-moon-gray pa3 b--moon-gray">
+        Browse by Genre
+      </summary>
+      <div class="flex flex-wrap pt3">
+        {{ range .Site.Taxonomies.genres }}
+        <a href="{{ .Page.Permalink }}" class="f5 link dim ba b--moon-gray ph3 pv2 mb2 mr2 dib gray bg-near-white hover-bg-moon-gray">
+          {{ .Page.Title }} <span class="f6">({{ len .Pages }})</span>
+        </a>
+        {{ end }}
+      </div>
+    </details>
   </section>
 </article>
 {{ end }}

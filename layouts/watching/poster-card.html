@@ -1,4 +1,13 @@
-{{ $featured_image := partials.Include "func/GetFeaturedImage.html" . }}
+{{ $featured_image := "" }}
+<!-- DEBUG: Page={{ .Title }} Resources={{ len .Resources }} -->
+{{ range .Resources }}
+<!-- RES: {{ .Name }} {{ .ResourceType }} -->
+{{ end }}
+{{ with .Resources.ByType "image" }}
+  {{ with index . 0 }}
+    {{ $featured_image = .RelPermalink }}
+  {{ end }}
+{{ end }}
 <a href="{{ .RelPermalink }}" class="db link dim tc">
   <div class="bg-light-gray" style="aspect-ratio: 2/3;">
     {{ if $featured_image }}
