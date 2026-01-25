@@ -2,7 +2,7 @@
 title: "If I Had Legs I'd Kick You"
 description: "Our thoughts on If I Had Legs I'd Kick You"
 date: 2026-01-25
-draft: true
+draft: false
 tags:
     - 2026
 author: Mike Crowe
