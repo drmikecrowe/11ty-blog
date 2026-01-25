@@ -18,7 +18,7 @@ year: 2025
 
 ## Our Thoughts
 
-This was okay, but I don't know if you'd call it great. George Clooney, of course, was fantastic. And surprise, Adam Sandler was too. But at the end of the day, it just kind of felt predictable.
+This was okay, but I don't know if you'd call it great. George Clooney, of course, was fantastic. Surprisingly, Adam Sandler was too. But at the end of the day, it just kind of felt predictable.
 
 ## IMDB Summary
 
