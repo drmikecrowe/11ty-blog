@@ -1,0 +1,49 @@
+{{/*
+  Custom Open Graph partial - uses featured_image from page bundles
+  Overrides Hugo's internal opengraph.html template
+*/}}
+<meta property="og:title" content="{{ .Title }}" />
+<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 200 }}{{ end }}" />
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
+<meta property="og:url" content="{{ .Permalink }}" />
+<meta property="og:site_name" content="{{ .Site.Title }}" />
+
+{{/* Get featured image using the existing GetFeaturedImage partial */}}
+{{ $image := partial "func/GetFeaturedImage.html" . }}
+{{ with $image }}
+  {{/* Convert relative URL to absolute */}}
+  {{ $absImage := . }}
+  {{ if not (hasPrefix . "http") }}
+    {{ $absImage = printf "%s%s" (strings.TrimSuffix "/" $.Site.BaseURL) . }}
+  {{ end }}
+  <meta property="og:image" content="{{ $absImage }}" />
+{{ else }}
+  {{/* Fallback to site's default featured image */}}
+  {{ with $.Site.Params.featured_image }}
+    <meta property="og:image" content="{{ . | absURL }}" />
+  {{ end }}
+{{ end }}
+
+{{ if .IsPage }}
+  {{ with .Section }}
+    <meta property="article:section" content="{{ . }}" />
+  {{ end }}
+  {{ with .PublishDate }}
+    <meta property="article:published_time" content="{{ .Format "2006-01-02T15:04:05Z07:00" }}" />
+  {{ end }}
+  {{ with .Lastmod }}
+    <meta property="article:modified_time" content="{{ .Format "2006-01-02T15:04:05Z07:00" }}" />
+  {{ end }}
+{{ end }}
+
+{{/* Twitter Card */}}
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="{{ .Title }}" />
+<meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 200 }}{{ end }}" />
+{{ with $image }}
+  {{ $absImage := . }}
+  {{ if not (hasPrefix . "http") }}
+    {{ $absImage = printf "%s%s" (strings.TrimSuffix "/" $.Site.BaseURL) . }}
+  {{ end }}
+  <meta name="twitter:image" content="{{ $absImage }}" />
+{{ end }}
