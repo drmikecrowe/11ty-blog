@@ -4,8 +4,8 @@ description: "Our thoughts on Bookie"
 date: 2025-06-01
 draft: false
 tags:
-  - 2026
-  - highly-recommended
+    - 2026
+    - highly-recommended
 rank: 5
 author: Mike Crowe
 show_reading_time: true
@@ -22,7 +22,7 @@ year: 2023
 
 We love We love Sebastian Maniscalco's standup, but didn't realize how great of an actor he is.
 
-## Summary
+## IMDB Summary
 
 Follows a veteran bookie struggling to survive the impending legalization of sports gambling, increasingly unstable clients, family and co-workers.
 

@@ -4,8 +4,8 @@ description: "Our thoughts on From"
 date: 2025-06-01
 draft: false
 tags:
-  - 2026
-  - highly-recommended
+    - 2026
+    - highly-recommended
 rank: 2
 author: Mike Crowe
 show_reading_time: true
@@ -22,7 +22,7 @@ year: 2022
 
 Great show
 
-## Summary
+## IMDB Summary
 
 Unravel the mystery of a city in middle U.S.A. that imprisons everyone who enters. As the residents struggle to maintain a sense of normality and seek a way out, they must also survive the threats of the surrounding forest.
 

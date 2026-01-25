@@ -4,8 +4,8 @@ description: "Our thoughts on Friday Night Dinner"
 date: 2025-06-01
 draft: false
 tags:
-  - 2026
-  - highly-recommended
+    - 2026
+    - highly-recommended
 rank: 5
 author: Mike Crowe
 show_reading_time: true
@@ -22,7 +22,7 @@ year: 2011
 
 Great show
 
-## Summary
+## IMDB Summary
 
 Two siblings share their Friday-night dinners at their parents' home and, somehow, something always goes wrong.
 

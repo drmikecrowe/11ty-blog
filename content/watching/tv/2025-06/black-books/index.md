@@ -4,8 +4,8 @@ description: "Our thoughts on Black Books"
 date: 2025-06-01
 draft: false
 tags:
-  - 2026
-  - highly-recommended
+    - 2026
+    - highly-recommended
 rank: 5
 author: Mike Crowe
 show_reading_time: true
@@ -22,7 +22,7 @@ year: 2000
 
 Great show
 
-## Summary
+## IMDB Summary
 
 Bernard Black runs a book shop, though his customer service skills leave something to be desired. He hires Manny as an employee. Fran runs the shop next door. Between the three of them many adventures ensue.
 

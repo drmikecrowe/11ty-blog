@@ -4,8 +4,8 @@ description: "Our thoughts on Bugonia"
 date: 2026-01-01
 draft: false
 tags:
-  - 2026
-  - worth-watching
+    - 2026
+    - worth-watching
 author: Mike Crowe
 show_reading_time: true
 featured_image: "images/hero.jpg"
@@ -21,7 +21,7 @@ year: 2025
 
 I'm not a huge fan of Emma Stone, but I am a huge fan of Jesse Plemons. And he knocked this out of the park. It's... Awesome and worth watching.
 
-## Summary
+## IMDB Summary
 
 Two conspiracy-obsessed young men kidnap the high-powered CEO of a major company, convinced that she is an alien intent on destroying planet Earth.
 

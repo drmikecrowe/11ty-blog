@@ -4,8 +4,8 @@ description: "Our thoughts on Elsbeth"
 date: 2025-06-01
 draft: false
 tags:
-  - 2026
-  - highly-recommended
+    - 2026
+    - highly-recommended
 rank: 5
 author: Mike Crowe
 show_reading_time: true
@@ -22,7 +22,7 @@ year: 2024
 
 Great show
 
-## Summary
+## IMDB Summary
 
 Astute but unconventional attorney Elsbeth Tascioni utilizes her singular point of view to make unique observations and corner brilliant criminals alongside the NYPD.
 

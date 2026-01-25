@@ -4,8 +4,8 @@ description: "Our thoughts on Derry Girls"
 date: 2025-06-01
 draft: false
 tags:
-  - 2026
-  - highly-recommended
+    - 2026
+    - highly-recommended
 rank: 2
 author: Mike Crowe
 show_reading_time: true
@@ -22,7 +22,7 @@ year: 2018
 
 Great show
 
-## Summary
+## IMDB Summary
 
 The personal exploits of a 16-year-old girl and her family and friends during the Troubles in the early 1990s in Northern Ireland.
 

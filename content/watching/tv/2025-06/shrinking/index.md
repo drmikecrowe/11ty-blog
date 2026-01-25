@@ -4,8 +4,8 @@ description: "Our thoughts on Shrinking"
 date: 2025-06-01
 draft: false
 tags:
-  - 2026
-  - highly-recommended
+    - 2026
+    - highly-recommended
 rank: 5
 author: Mike Crowe
 show_reading_time: true
@@ -22,7 +22,7 @@ year: 2023
 
 Great show
 
-## Summary
+## IMDB Summary
 
 A grieving therapist starts to tell his clients exactly what he thinks. Ignoring his training and ethics, he finds himself making huge changes to people's lives - including his own.
 

@@ -4,8 +4,8 @@ description: "Our thoughts on One Cut of the Dead"
 date: 2025-12-01
 draft: false
 tags:
-  - 2026
-  - highly-recommended
+    - 2026
+    - highly-recommended
 rank: 1
 author: Mike Crowe
 show_reading_time: true
@@ -22,7 +22,7 @@ year: 2017
 
 Trust me, don't read up on this. Just watch it. I've probably watched this movie over ten times. The first time is wonderful, but then the second time is when you show it to someone and catch the nuances of it and enjoy seeing the revelation in them. You have to slog through the first 35 minutes because you simply can't understand what's going on, but just do it.
 
-## Summary
+## IMDB Summary
 
 Things go badly for a hack director and film crew shooting a low budget zombie movie in an abandoned WWII Japanese facility, when they are attacked by real zombies.
 

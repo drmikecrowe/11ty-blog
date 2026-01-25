@@ -4,8 +4,8 @@ description: "Our thoughts on The Vicar of Dibley"
 date: 2025-06-01
 draft: false
 tags:
-  - 2026
-  - highly-recommended
+    - 2026
+    - highly-recommended
 rank: 5
 author: Mike Crowe
 show_reading_time: true
@@ -22,7 +22,7 @@ year: 1994
 
 Great show
 
-## Summary
+## IMDB Summary
 
 A boisterous female minister comes to serve in an eccentrically conservative village's church.
 

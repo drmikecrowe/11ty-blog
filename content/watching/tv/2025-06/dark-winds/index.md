@@ -4,8 +4,8 @@ description: "Our thoughts on Dark Winds"
 date: 2025-06-01
 draft: false
 tags:
-  - 2026
-  - highly-recommended
+    - 2026
+    - highly-recommended
 rank: 2
 author: Mike Crowe
 show_reading_time: true
@@ -22,7 +22,7 @@ year: 2022
 
 Great show
 
-## Summary
+## IMDB Summary
 
 Follows Leaphorn and Chee, two Navajo police officers in the 1970s Southwest that are forced to challenge their own spiritual beliefs when they search for clues in a double murder case.
 

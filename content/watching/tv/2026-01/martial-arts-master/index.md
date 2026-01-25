@@ -4,8 +4,8 @@ description: "Our thoughts on Martial Arts Master"
 date: 2026-01-21
 draft: false
 tags:
-  - 2026
-  - highly-recommend
+    - 2026
+    - highly-recommend
 rank: 1
 author: Mike Crowe
 show_reading_time: true
@@ -22,7 +22,7 @@ year: 2020
 
 I wanted to include this one because it is fantastic. Yes it's 45 minute episodes and I think 45 episodes but frankly it's worth [purchasing on Amazon](https://www.amazon.com/gp/video/detail/B0DHXJQWTM/ref=atv_dp_share_cu_r) it is so good.
 
-## Summary
+## IMDB Summary
 
 The Refornment Movement of 1898 resulted in the "Six Heroes" dying. Huo Yuan Jia, who was filled with patriotic enthusiasm, had been eager to participate.
 

@@ -4,8 +4,8 @@ description: "Our thoughts on Rare Exports"
 date: 2025-12-01
 draft: false
 tags:
-  - 2026
-  - highly-recommended
+    - 2026
+    - highly-recommended
 rank: 4
 author: Mike Crowe
 show_reading_time: true
@@ -22,7 +22,7 @@ year: 2010
 
 This one is definitely one of my recommendations that Kelly can't stand. I try to watch it every Christmas and just enjoy the story. Yes, it's Christmas horror, but it's clever and I don't get tired of it.
 
-## Summary
+## IMDB Summary
 
 In the depths of the Korvatunturi mountains, 486 meters deep, lies the closest ever guarded secret of Christmas. The time has come to dig it up. This Christmas everyone will believe in Santa Claus.
 

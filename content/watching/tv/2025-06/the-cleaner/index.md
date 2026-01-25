@@ -4,8 +4,8 @@ description: "Our thoughts on The Cleaner"
 date: 2025-06-01
 draft: false
 tags:
-  - 2026
-  - highly-recommended
+    - 2026
+    - highly-recommended
 rank: 3
 author: Mike Crowe
 show_reading_time: true
@@ -22,7 +22,7 @@ year: 2021
 
 Great show
 
-## Summary
+## IMDB Summary
 
 Paul 'Wicky' Wickstead, a state-certified cleaning technician, is responsible for the removal of any signs of death from crime scenes.
 

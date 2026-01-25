@@ -4,7 +4,7 @@ description: "Our thoughts on Adult Swim Yule Log"
 date: 2025-12-01
 draft: false
 tags:
-  - 2026
+    - 2026
 author: Mike Crowe
 show_reading_time: true
 featured_image: "images/hero.jpg"
@@ -20,7 +20,7 @@ year: 2022
 
 Who says horror and Christmas doesn't go together? Though calling this horror is a stretch, it's more just fun.
 
-## Summary
+## IMDB Summary
 
 What starts as a simple yule log feed devolves into a surrealist nightmare, as a couple and a group of podcasters spend the night in a double-booked cabin that is secretly occupied by evil and murderous forces.
 

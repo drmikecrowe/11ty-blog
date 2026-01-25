@@ -4,8 +4,8 @@ description: "Our thoughts on The Diplomat"
 date: 2025-11-01
 draft: false
 tags:
-  - 2026
-  - highly-recommended
+    - 2026
+    - highly-recommended
 rank: 1
 author: Mike Crowe
 show_reading_time: true
@@ -22,7 +22,7 @@ year: 2023
 
 Keri Russell and Rufus Sewell are amazing and this series is fantastic. Just watch it
 
-## Summary
+## IMDB Summary
 
 In the midst of an international crisis, Kate Wyler, a career diplomat, lands in a high-profile job for which she is not suited, with tectonic implications for her marriage and her political future.
 

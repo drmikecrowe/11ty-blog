@@ -4,8 +4,8 @@ description: "Our thoughts on Inglourious Basterds"
 date: 2026-01-01
 draft: false
 tags:
-  - 2026
-  - highly-recommended
+    - 2026
+    - highly-recommended
 rank: 1
 author: Mike Crowe
 show_reading_time: true
@@ -22,7 +22,7 @@ year: 2009
 
 Sometimes you just need a good revenge movie, and this one's it. If you're a Quentin Tarantino fan, and haven't seen this, shame on you. Brad Pitt is amazing. Now don't get me wrong, it's Quentin Tarantino. So be prepared.
 
-## Summary
+## IMDB Summary
 
 In Nazi-occupied France during World War II, a plan to assassinate Nazi leaders by a group of Jewish U.S. soldiers coincides with a theatre owner's vengeful plans for the same.
 

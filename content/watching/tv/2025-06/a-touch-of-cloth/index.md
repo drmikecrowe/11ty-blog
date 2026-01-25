@@ -4,8 +4,8 @@ description: "Our thoughts on A Touch of Cloth"
 date: 2025-06-01
 draft: false
 tags:
-  - 2026
-  - highly-recommended
+    - 2026
+    - highly-recommended
 rank: 5
 author: Mike Crowe
 show_reading_time: true
@@ -22,7 +22,7 @@ year: 2012
 
 Great show
 
-## Summary
+## IMDB Summary
 
 DCI Jack Cloth and DC Anne Oldman are paired to investigate a series of grisly murders done by a devious killer.
 

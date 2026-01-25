@@ -4,8 +4,8 @@ description: "Our thoughts on The Life of Chuck"
 date: 2026-01-01
 draft: false
 tags:
-  - 2026
-  - highly-recommended
+    - 2026
+    - highly-recommended
 rank: 2
 author: Mike Crowe
 show_reading_time: true
@@ -26,7 +26,7 @@ Understand going into it that the three chapters in Chuck's life are told from t
 
 Tom Hiddleston is amazing. And this story was masterfully crafted and presented. I can't stop thinking about it.
 
-## Summary
+## IMDB Summary
 
 A life-affirming, genre-bending story about three chapters in the life of an ordinary man named Charles Krantz.
 

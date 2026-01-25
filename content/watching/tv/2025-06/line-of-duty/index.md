@@ -4,8 +4,8 @@ description: "Our thoughts on Line of Duty"
 date: 2025-06-01
 draft: false
 tags:
-  - 2026
-  - highly-recommended
+    - 2026
+    - highly-recommended
 rank: 1
 author: Mike Crowe
 show_reading_time: true
@@ -22,7 +22,7 @@ year: 2012
 
 Great show
 
-## Summary
+## IMDB Summary
 
 British crime drama series following a team of elite detectives tasked with investigating police corruption.
 

@@ -4,8 +4,8 @@ description: "Our thoughts on High Potential"
 date: 2026-01-01
 draft: false
 tags:
-  - 2026
-  - worth-watching
+    - 2026
+    - worth-watching
 rank: 3
 author: Mike Crowe
 show_reading_time: true
@@ -22,7 +22,7 @@ year: 2024
 
 We know her from Sweet D in It's Always Sunny in Philadelphia, though she's also Jean Smart's daughter in Hacks. Wherever you know her from, she's amazing in this show. We really enjoy this, and they've got a fantastic cast that pulls us off.
 
-## Summary
+## IMDB Summary
 
 A single mom with three kids helps solve an unsolvable crime when she rearranges some evidence during her shift as a police department cleaner.
 

@@ -4,8 +4,8 @@ description: "Our thoughts on Murder by Death"
 date: 2025-12-01
 draft: false
 tags:
-  - 2026
-  - highly-recommended
+    - 2026
+    - highly-recommended
 rank: 4
 author: Mike Crowe
 show_reading_time: true
@@ -22,7 +22,7 @@ year: 1976
 
 I had to throw this one in there because this is a movie we regularly watch. Dame Maggie Smith, Peter Sellers, and just a ton of A-list actors and a spoof of Agatha Christie. It's worth it just to watch the original Obi-Wan Kenobi play a blind butler.
 
-## Summary
+## IMDB Summary
 
 Five famous literary detective characters and their sidekicks are invited to a bizarre mansion to solve an even stranger mystery.
 

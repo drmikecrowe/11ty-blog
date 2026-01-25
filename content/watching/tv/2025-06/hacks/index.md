@@ -4,8 +4,8 @@ description: "Our thoughts on Hacks"
 date: 2025-06-01
 draft: false
 tags:
-  - 2026
-  - highly-recommended
+    - 2026
+    - highly-recommended
 rank: 2
 author: Mike Crowe
 show_reading_time: true
@@ -22,7 +22,7 @@ year: 2021
 
 Great show
 
-## Summary
+## IMDB Summary
 
 Explores a dark mentorship that forms between Deborah Vance, a legendary Las Vegas comedian, and an entitled, outcast 25-year-old.
 

@@ -4,8 +4,8 @@ description: "Our thoughts on Due South"
 date: 2025-06-01
 draft: false
 tags:
-  - 2026
-  - highly-recommended
+    - 2026
+    - highly-recommended
 rank: 5
 author: Mike Crowe
 show_reading_time: true
@@ -22,7 +22,7 @@ year: 1994
 
 Great show
 
-## Summary
+## IMDB Summary
 
 The adventures of an impossibly upright Royal Canadian Mounted Police constable and his American colleagues in the city of Chicago.
 

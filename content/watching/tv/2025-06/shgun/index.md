@@ -4,8 +4,8 @@ description: "Our thoughts on Shōgun"
 date: 2025-06-01
 draft: false
 tags:
-  - 2026
-  - highly-recommended
+    - 2026
+    - highly-recommended
 rank: 5
 author: Mike Crowe
 show_reading_time: true
@@ -22,7 +22,7 @@ year: 2024
 
 Great show
 
-## Summary
+## IMDB Summary
 
 When a mysterious European ship is found marooned in a nearby Japanese fishing village, Lord Yoshii Toranaga discovers secrets that could tip the scales of power and devastate his enemies.
 

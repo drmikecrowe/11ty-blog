@@ -4,8 +4,8 @@ description: "Our thoughts on What We Do in the Shadows"
 date: 2025-06-01
 draft: false
 tags:
-  - 2026
-  - highly-recommended
+    - 2026
+    - highly-recommended
 rank: 2
 author: Mike Crowe
 show_reading_time: true
@@ -22,7 +22,7 @@ year: 2019
 
 Great show
 
-## Summary
+## IMDB Summary
 
 A look into the nightly lives of four vampires who have lived together on Staten Island for over a century.
 

@@ -4,8 +4,8 @@ description: "Our thoughts on Utopia"
 date: 2025-06-01
 draft: false
 tags:
-  - 2026
-  - highly-recommended
+    - 2026
+    - highly-recommended
 rank: 1
 author: Mike Crowe
 show_reading_time: true
@@ -22,7 +22,7 @@ year: 2014
 
 This is such a great show with a clever premise. Tony and Nat are the only two competent people in this government agency, and they have willing but substandard employees. They try to manage. It's simply wonderful.
 
-## Summary
+## IMDB Summary
 
 Set inside the offices of the "Nation Building Authority", a newly created government organization responsible for overseeing major infrastructure projects.
 

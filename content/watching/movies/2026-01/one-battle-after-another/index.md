@@ -4,8 +4,8 @@ description: "Our thoughts on One Battle After Another"
 date: 2026-01-01
 draft: false
 tags:
-  - 2026
-  - worth-watching
+    - 2026
+    - worth-watching
 author: Mike Crowe
 show_reading_time: true
 featured_image: "images/hero.jpg"
@@ -23,7 +23,7 @@ I'm not a fan of Leonardo DiCaprio, but I still enjoyed this movie (Well, enjoye
 
 But with all that, hats off to Benicio Del Toro for his performance. He made it fantastic.
 
-## Summary
+## IMDB Summary
 
 When their evil enemy resurfaces after 16 years, a group of ex-revolutionaries reunite to rescue the daughter of one of their own.
 

@@ -4,8 +4,8 @@ description: "Our thoughts on Fawlty Towers"
 date: 2025-06-01
 draft: false
 tags:
-  - 2026
-  - highly-recommended
+    - 2026
+    - highly-recommended
 rank: 5
 author: Mike Crowe
 show_reading_time: true
@@ -22,7 +22,7 @@ year: 1975
 
 Great show
 
-## Summary
+## IMDB Summary
 
 Hotel owner Basil Fawlty's incompetence, short fuse, and arrogance form a combination that ensures accidents and trouble are never far away.
 

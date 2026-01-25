@@ -4,9 +4,9 @@ description: "Our thoughts on Eternity"
 date: 2025-12-01
 draft: false
 tags:
-  - 2026
-  - highly-recommended
-  - rom-com
+    - 2026
+    - highly-recommended
+    - rom-com
 rank: 3
 author: Mike Crowe
 show_reading_time: true
@@ -23,7 +23,7 @@ year: 2025
 
 We started this thinking we were starting something else and it grabbed our attention quickly. We loved it. I've recommended it over and over. This is one of those great date night movies to just enjoy.
 
-## Summary
+## IMDB Summary
 
 In an afterlife where souls have one week to decide where to spend eternity, Joan is faced with the impossible choice between the man she spent her life with and her first love, who died young and has waited decades for her to arrive.
 

@@ -448,7 +448,7 @@ year: {year if year else '""'}
 
 {thoughts}
 
-## Summary
+## IMDB Summary
 
 {summary}
 

@@ -4,8 +4,8 @@ description: "Our thoughts on WKRP in Cincinnati"
 date: 2025-06-01
 draft: false
 tags:
-  - 2026
-  - highly-recommended
+    - 2026
+    - highly-recommended
 rank: 5
 author: Mike Crowe
 show_reading_time: true
@@ -22,7 +22,7 @@ year: 1978
 
 Great show
 
-## Summary
+## IMDB Summary
 
 The misadventures of the staff of a struggling Top 40 rock radio station in Cincinnati, Ohio.
 

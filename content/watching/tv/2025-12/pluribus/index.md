@@ -4,8 +4,8 @@ description: "Our thoughts on Pluribus"
 date: 2025-12-01
 draft: false
 tags:
-  - 2026
-  - highly-recommended
+    - 2026
+    - highly-recommended
 rank: 1
 author: Mike Crowe
 show_reading_time: true
@@ -22,7 +22,7 @@ year: 2025
 
 If you're a fan of Breaking Bad or Better Call Saul, or more importantly Vince Gilligan, then this show is 100% for you. Rhea Sehorne was phenomenal. And I think he wrote this because she is that talented.
 
-## Summary
+## IMDB Summary
 
 In a world overtaken by a mysterious wave of forced happiness, Carol Sturka, one of the immune few, must uncover what's really going on - and save humanity from its artificial bliss.
 

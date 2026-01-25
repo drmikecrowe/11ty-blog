@@ -4,8 +4,8 @@ description: "Our thoughts on Slow Horses"
 date: 2025-06-01
 draft: false
 tags:
-  - 2026
-  - highly-recommended
+    - 2026
+    - highly-recommended
 rank: 2
 author: Mike Crowe
 show_reading_time: true
@@ -22,7 +22,7 @@ year: 2022
 
 Great show
 
-## Summary
+## IMDB Summary
 
 A dysfunctional team of MI5 agents navigate the espionage world's smoke and mirrors to defend the UK from sinister forces.
 

@@ -4,8 +4,8 @@ description: "Our thoughts on Luther"
 date: 2025-06-01
 draft: false
 tags:
-  - 2026
-  - highly-recommended
+    - 2026
+    - highly-recommended
 rank: 2
 author: Mike Crowe
 show_reading_time: true
@@ -22,7 +22,7 @@ year: 2010
 
 Great show
 
-## Summary
+## IMDB Summary
 
 John Luther is a brilliant homicide detective with a knack for getting inside the minds of murderers. Unfortunately, his unconventional methods and personal demons put him at odds with his team.
 

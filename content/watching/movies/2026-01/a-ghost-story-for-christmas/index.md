@@ -4,7 +4,7 @@ description: "Our thoughts on A Ghost Story for Christmas"
 date: 2026-01-01
 draft: false
 tags:
-  - 2026
+    - 2026
 author: Mike Crowe
 show_reading_time: true
 featured_image: "images/hero.jpg"
@@ -20,7 +20,7 @@ year: 2005
 
 Mark Gattis really has a knack for great stories. This one was really enjoyable and Roy Kinnear as always is fantastic.
 
-## Summary
+## IMDB Summary
 
 Mark Gatiss, master of the macabre, presents chilling Christmas stories for a cold winter's night.
 

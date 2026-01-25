@@ -4,8 +4,8 @@ description: "Our thoughts on Ludwig"
 date: 2025-06-01
 draft: false
 tags:
-  - 2026
-  - highly-recommended
+    - 2026
+    - highly-recommended
 rank: 2
 author: Mike Crowe
 show_reading_time: true
@@ -22,7 +22,7 @@ year: 2024
 
 Great show
 
-## Summary
+## IMDB Summary
 
 While seeking to unravel the mystery of his twin brother's disappearance, reclusive puzzle-designer John 'Ludwig' Taylor takes on his twin brother James's identity as DCI on Cambridge's major crimes squad.
 

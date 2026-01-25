@@ -4,7 +4,7 @@ description: "Our thoughts on The Long Walk"
 date: 2026-01-01
 draft: false
 tags:
-  - 2026
+    - 2026
 author: Mike Crowe
 show_reading_time: true
 featured_image: "images/hero.jpg"
@@ -20,7 +20,7 @@ year: 2025
 
 Kelly made me read this book and it haunted me, but in fairness, it's Stephen King, right? It's dystopian and horrific, but I do recommend it.
 
-## Summary
+## IMDB Summary
 
 A group of teenage boys compete in an annual contest known as "The Long Walk," in which they must maintain a certain walking speed or get shot.
 

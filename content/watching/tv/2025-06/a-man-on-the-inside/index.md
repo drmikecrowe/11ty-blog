@@ -4,8 +4,8 @@ description: "Our thoughts on A Man on the Inside"
 date: 2025-06-01
 draft: false
 tags:
-  - 2026
-  - highly-recommended
+    - 2026
+    - highly-recommended
 rank: 5
 author: Mike Crowe
 show_reading_time: true
@@ -22,7 +22,7 @@ year: 2024
 
 Great show
 
-## Summary
+## IMDB Summary
 
 Charles, a retired man, gets a new lease on life when he answers an ad from a private investigator and becomes a mole in a secret investigation in a nursing home.
 

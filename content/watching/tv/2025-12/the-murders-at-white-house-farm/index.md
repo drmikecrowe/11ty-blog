@@ -4,8 +4,8 @@ description: "Our thoughts on The Murders at White House Farm"
 date: 2025-12-01
 draft: false
 tags:
-  - 2026
-  - british
+    - 2026
+    - british
 author: Mike Crowe
 show_reading_time: true
 featured_image: "images/hero.jpg"
@@ -21,7 +21,7 @@ year: 2020
 
 This one isn't easy to watch, but if you're a fan of true stories, then this is for you.
 
-## Summary
+## IMDB Summary
 
 Revolves around the true story of a fateful night in August 1985 when five members of the same family are murdered at an Essex farmhouse, and the ensuing police investigation and court case that follows.
 

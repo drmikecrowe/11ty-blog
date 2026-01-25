@@ -4,8 +4,8 @@ description: "Our thoughts on Black Bag"
 date: 2026-01-01
 draft: false
 tags:
-  - 2026
-  - highly-recommended
+    - 2026
+    - highly-recommended
 rank: 2
 author: Mike Crowe
 show_reading_time: true
@@ -22,7 +22,7 @@ year: 2025
 
 How can you go wrong with Michael Fassbender and Cate Blanchett? This movie grabbed us from the start and kept us engaged through the whole thing.
 
-## Summary
+## IMDB Summary
 
 When intelligence agent Kathryn Woodhouse is suspected of betraying the nation, her husband - also a legendary agent - faces the ultimate test of whether to be loyal to his marriage, or his country.
 

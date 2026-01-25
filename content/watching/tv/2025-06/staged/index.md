@@ -4,8 +4,8 @@ description: "Our thoughts on Staged"
 date: 2025-06-01
 draft: false
 tags:
-  - 2026
-  - highly-recommended
+    - 2026
+    - highly-recommended
 rank: 3
 author: Mike Crowe
 show_reading_time: true
@@ -22,7 +22,7 @@ year: 2020
 
 Great show
 
-## Summary
+## IMDB Summary
 
 David Tennant and Michael Sheen's West End play has been put on hold due to Covid-19, but their director has persuaded them to carry on rehearsing online.
 

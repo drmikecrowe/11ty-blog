@@ -4,8 +4,8 @@ description: "Our thoughts on Dept. Q"
 date: 2025-06-01
 draft: false
 tags:
-  - 2026
-  - highly-recommended
+    - 2026
+    - highly-recommended
 rank: 2
 author: Mike Crowe
 show_reading_time: true
@@ -22,7 +22,7 @@ year: 2025
 
 Great show
 
-## Summary
+## IMDB Summary
 
 Carl, a former top-rated detective, is wracked with guilt following an attack that left his partner paralyzed and another policeman dead. On his return to work, Carl is assigned to a cold case that will consume his life.
 

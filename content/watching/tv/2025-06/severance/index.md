@@ -4,8 +4,8 @@ description: "Our thoughts on Severance"
 date: 2025-06-01
 draft: false
 tags:
-  - 2026
-  - highly-recommended
+    - 2026
+    - highly-recommended
 rank: 3
 author: Mike Crowe
 show_reading_time: true
@@ -22,7 +22,7 @@ year: 2022
 
 Great show
 
-## Summary
+## IMDB Summary
 
 Mark leads a team of office workers whose memories have been surgically divided between their work and personal lives. When a mysterious colleague appears outside of work, it begins a journey to discover the truth about their jobs.
 

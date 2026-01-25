@@ -4,7 +4,7 @@ description: "Our thoughts on A Knight of the Seven Kingdoms"
 date: 2026-01-21
 draft: false
 tags:
-  - 2026
+    - 2026
 author: Mike Crowe
 show_reading_time: true
 featured_image: "images/hero.jpg"
@@ -20,7 +20,7 @@ year: 2026
 
 Just started this, but the first episode didn't grab us. It does have potential though, so we're gonna give it a few more episodes.
 
-## Summary
+## IMDB Summary
 
 A century before GOT, Ser Duncan the Tall, and his squire, Egg, wandered through Westeros while the Targaryen dynasty ruled the Iron Throne, and dragons were still remembered. Great destinies and enemies await the incomparable friends.
 

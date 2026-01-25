@@ -4,8 +4,8 @@ description: "Our thoughts on The Offer"
 date: 2025-06-01
 draft: false
 tags:
-  - 2026
-  - highly-recommended
+    - 2026
+    - highly-recommended
 rank: 1
 author: Mike Crowe
 show_reading_time: true
@@ -22,7 +22,7 @@ year: 2022
 
 Great show
 
-## Summary
+## IMDB Summary
 
 Oscar-winning producer Albert S. Ruddy's never-before-revealed experiences of making The Godfather (1972).
 

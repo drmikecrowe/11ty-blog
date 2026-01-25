@@ -4,8 +4,8 @@ description: "Our thoughts on Midnight Mass"
 date: 2025-06-01
 draft: false
 tags:
-  - 2026
-  - highly-recommended
+    - 2026
+    - highly-recommended
 rank: 2
 author: Mike Crowe
 show_reading_time: true
@@ -22,7 +22,7 @@ year: 2021
 
 Great show
 
-## Summary
+## IMDB Summary
 
 An isolated island community experiences miraculous events - and frightening omens - after the arrival of a charismatic, mysterious young priest.
 

@@ -4,8 +4,8 @@ description: "Our thoughts on Lioness"
 date: 2025-06-01
 draft: false
 tags:
-  - 2026
-  - highly-recommended
+    - 2026
+    - highly-recommended
 rank: 3
 author: Mike Crowe
 show_reading_time: true
@@ -22,7 +22,7 @@ year: 2023
 
 Great show
 
-## Summary
+## IMDB Summary
 
 CIA operative Joe McNamara and her team attempt to balance their personal and professional lives as the tip of the spear in the agency's war on terror.
 

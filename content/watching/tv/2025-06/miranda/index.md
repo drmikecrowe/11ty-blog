@@ -4,8 +4,8 @@ description: "Our thoughts on Miranda"
 date: 2025-06-01
 draft: false
 tags:
-  - 2026
-  - highly-recommended
+    - 2026
+    - highly-recommended
 rank: 3
 author: Mike Crowe
 show_reading_time: true
@@ -22,7 +22,7 @@ year: 2009
 
 Great show
 
-## Summary
+## IMDB Summary
 
 Socially inept Miranda always gets into awkward situations; working in her joke shop with best friend Stevie, being hounded by her pushy mother, and around her crush Gary.
 

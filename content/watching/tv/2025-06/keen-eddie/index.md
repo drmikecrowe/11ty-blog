@@ -4,8 +4,8 @@ description: "Our thoughts on Keen Eddie"
 date: 2025-06-01
 draft: false
 tags:
-  - 2026
-  - highly-recommended
+    - 2026
+    - highly-recommended
 rank: 5
 author: Mike Crowe
 show_reading_time: true
@@ -22,7 +22,7 @@ year: 2003
 
 Great show
 
-## Summary
+## IMDB Summary
 
 Wisecracking New York City cop Detective Eddie Arlette, who has no respect for authority, is himself a fish out of water when he is assigned to a police precinct in the U.K.
 

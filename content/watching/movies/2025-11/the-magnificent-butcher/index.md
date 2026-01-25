@@ -4,7 +4,7 @@ description: "Our thoughts on The Magnificent Butcher"
 date: 2025-11-01
 draft: false
 tags:
-  - 2026
+    - 2026
 author: Mike Crowe
 show_reading_time: true
 featured_image: "images/hero.jpg"
@@ -22,8 +22,7 @@ I had to write something like this because I watched the final scene on a Facebo
 
 Overall, it's a lot of fun, but you're haunted by that one scene. The final fight scene is epic for sure.
 
-
-## Summary
+## IMDB Summary
 
 A hot headed young butcher, who is also a kung fu disciple, gets embroiled in a feud with a rival shaolin temple.
 

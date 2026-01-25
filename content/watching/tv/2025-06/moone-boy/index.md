@@ -4,8 +4,8 @@ description: "Our thoughts on Moone Boy"
 date: 2025-06-01
 draft: false
 tags:
-  - 2026
-  - highly-recommended
+    - 2026
+    - highly-recommended
 rank: 2
 author: Mike Crowe
 show_reading_time: true
@@ -22,7 +22,7 @@ year: 2012
 
 Great show
 
-## Summary
+## IMDB Summary
 
 Martin Moone is a young boy who relies on the help of his imaginary friend, Sean, to deal with the quandaries of life in a wacky small-town Irish family circa 1990.
 
