@@ -159,7 +159,7 @@ Starting fresh is the easy part. What about the repos you've had for two years w
 That's what [git-worktree-organize](https://github.com/drmikecrowe/git-worktree-organize) is for. It takes your existing git repo plus all its linked worktrees and reorganizes everything into the hub structure — wherever you want it.
 
 ```bash
-# Convert in place (creates a hub alongside the original)
+# Convert in place (renames original to .old, creates hub at the original path)
 npx git-worktree-organize ~/Projects/Pinnacle/internal-apps
 
 # Or move the whole thing somewhere completely different
@@ -183,10 +183,10 @@ Before running, it shows you exactly what it's going to do and asks for confirma
 
 ```
 Worktrees to migrate:
-  [upgrade-node-22-clean] [main]  →  /new/location/upgrade-node-22-clean
-  [main]                          →  /new/location/main
-  [upgrade-node-22]               →  /new/location/upgrade-node-22
-  [fix-middy]                     →  /new/location/fix-middy
+  [upgrade-node-22-clean]  (labeled [main])  →  /new/location/upgrade-node-22-clean
+  [main]                                     →  /new/location/main
+  [upgrade-node-22]                          →  /new/location/upgrade-node-22
+  [fix-middy]                                →  /new/location/fix-middy
 
 Hub destination: /new/location  (bare repo at /new/location/.bare)
 
@@ -215,16 +215,17 @@ Branch names as directory names. Everything in one place. `git worktree list` ma
 
 ## The Proper Tool: git-worktree-organize on npm
 
-The bash script handles the standard case well but has portability problems (`stat -c %d` is Linux-only — breaks on macOS) and only handles one input configuration type. There are actually several ways a git repo-with-worktrees can look in the wild:
+The git alias handles fresh clones well, but migrating existing repos is a different beast. There are actually several ways a git repo-with-worktrees can look in the wild:
 
-| What you have          | How to detect it                      |
-| ---------------------- | ------------------------------------- |
-| Standard non-bare repo | `.git/` directory, `core.bare=false`  |
-| Already a hub          | `.bare/` + `.git` file                |
-| Bare root              | The directory itself is the bare repo |
-| Bare in `.git/`        | `.git/` directory, `core.bare=true`   |
+| What you have          | How to detect it                                      |
+| ---------------------- | ----------------------------------------------------- |
+| Standard non-bare repo | `.git/` directory, `core.bare=false`                  |
+| Already a hub          | `.bare/` + `.git` file                                |
+| Bare root              | The directory itself is the bare repo                 |
+| Bare in `.git/`        | `.git/` directory, `core.bare=true`                   |
+| Bare external          | `.git` file pointing to a gitdir stored elsewhere     |
 
-So I rewrote it as a proper TypeScript/Bun CLI that detects which configuration type you have and handles all of them. It's on npm now — no install required:
+So I built it as a proper TypeScript/Node CLI that detects which configuration type you have and handles all of them. It's on npm now — no install required:
 
 ```bash
 npx git-worktree-organize <source> [destination]
