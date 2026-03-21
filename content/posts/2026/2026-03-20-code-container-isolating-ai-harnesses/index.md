@@ -4,7 +4,7 @@ title: "Code Container: Isolating AI Coding Harnesses Without Losing Your Mind"
 description: "A daily-driver for running Claude Code, OpenCode, Codex, and Gemini in isolated environments — with seamless auth, egress firewalls, and zero re-authentication friction."
 date: 2026-03-20T10:00:00.000Z
 permalink: /posts/2026-03-20-code-container-isolating-ai-harnesses/
-draft: true
+draft: false
 categories:
     - tech
 tags:
