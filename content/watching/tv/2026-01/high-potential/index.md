@@ -4,8 +4,8 @@ description: "Our thoughts on High Potential"
 date: 2026-01-01
 draft: false
 tags:
-    - 2026
-    - worth-watching
+  - 2026
+  - worth-watching
 rank: 3
 author: Mike Crowe
 show_reading_time: true

@@ -4,3 +4,9 @@ uv = "latest"
 
 [env]
 _.python.venv = ".venv" # relative to this file's directory
+
+[tasks.preview]
+run = "hugo build && hugo server"
+
+[tasks.deploy]
+run = "varlock run -- zsh full-deploy.sh"

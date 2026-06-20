@@ -607,11 +607,13 @@ def main():
             post_date = datetime.now().strftime("%Y-%m-%d")
     else:
         # Create new post
-        current_month = args.date if args.date else datetime.now().strftime("%Y-%m")
         if args.date and len(args.date) == 7:
             post_date = f"{args.date}-01"
         else:
             post_date = args.date if args.date else datetime.now().strftime("%Y-%m-%d")
+        # Folder is always grouped by month (YYYY-MM), regardless of whether
+        # --date was given as a full date or just a month.
+        current_month = post_date[:7]
         output_dir = type_dir / current_month / slug
 
     # Create output directory

@@ -1,8 +1,4 @@
 {{ $featured_image := "" }}
-<!-- DEBUG: Page={{ .Title }} Resources={{ len .Resources }} -->
-{{ range .Resources }}
-<!-- RES: {{ .Name }} {{ .ResourceType }} -->
-{{ end }}
 {{ with .Resources.ByType "image" }}
   {{ with index . 0 }}
     {{ $featured_image = .RelPermalink }}
