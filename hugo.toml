@@ -86,10 +86,34 @@ username = "drmikecrowe"
 username = "drmikecrowe"
 
 [params.ananke.social.rss]
-profilelink = "/index.xml"
+profilelink = "/blog/index.xml"
 
 [deployment]
 [[deployment.targets]]
 name = "prod"
 url = "s3://mikesshinyobjects.tech"
 cloudFrontDistributionID = "E230DHNOI4UQRZ"
+
+# Two dedicated RSS feeds, decoupled from section structure:
+#   /blog/index.xml     -> technical writing (content/posts)
+#   /watching/index.xml -> what we're watching (content/watching/{tv,movies})
+# Default per-section and home RSS are dropped so these are the only site feeds.
+[outputs]
+home = ["HTML", "blogfeed", "watchingfeed"]
+section = ["HTML"]
+
+[outputFormats.blogfeed]
+mediaType = "application/rss+xml"
+path = "blog"
+baseName = "index"
+rel = "alternate"
+isPlainText = false
+noUgly = true
+
+[outputFormats.watchingfeed]
+mediaType = "application/rss+xml"
+path = "watching"
+baseName = "index"
+rel = "alternate"
+isPlainText = false
+noUgly = true

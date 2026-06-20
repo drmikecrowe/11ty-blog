@@ -1,21 +1,17 @@
 {{- /*
   Code block render hook.
   Keeps Chroma syntax highlighting (the rendered site is visually unchanged)
-  but normalizes the HTML so Medium's "Import a story" scraper handles the
-  block cleanly. Three fixes, all whitespace-only inside <pre>:
+  but normalizes whitespace so Medium's "Import a story" scraper behaves:
 
     1. Strip leading/trailing blank lines. Chroma's trailing newline otherwise
        imports as a stray empty code block.
-    2. Replace blank interior lines with a single space. Medium drops truly
-       empty lines and can split the block at them.
-    3. Move each line's terminating newline OUTSIDE the closing <span> tags.
-       Chroma tokenizes a line-continuation "\" with the newline inside a color
-       span (<span style="color:..">\<newline></span>); Medium flattens that
-       inline span and loses the newline, collapsing the two lines into one.
-       Pushing the newline past the span closers keeps it as plain text.
+    2. Replace blank interior lines with a single space, so Medium keeps the
+       blank line instead of dropping it.
+
+  Note: we deliberately do NOT move newlines outside Chroma's per-line
+  <span style="display:flex"> wrappers. Those wrappers already create the line
+  break, so a loose newline beside them double-spaces every line on the site.
 */ -}}
 {{- $code := trim .Inner "\n" -}}
 {{- $code = replaceRE `(?m)^[ \t]*$` " " $code -}}
-{{- $out := transform.Highlight $code .Type .Options -}}
-{{- $out = replaceRE `\n((?:</span>)+)(<span style="display:flex;")` "${1}\n${2}" (string $out) -}}
-{{- $out | safeHTML -}}
+{{- transform.Highlight $code .Type .Options -}}

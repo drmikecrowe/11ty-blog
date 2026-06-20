@@ -1,0 +1,29 @@
+{{- /* Watching feed -> /watching/index.xml (content/watching/{tv,movies}) */ -}}
+{{- $pages := where site.RegularPages "Section" "watching" -}}
+{{- $limit := site.Config.Services.RSS.Limit -}}
+{{- if ge $limit 1 }}{{ $pages = $pages | first $limit }}{{ end -}}
+{{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>{{ site.Title }} &#8212; Watching</title>
+		<link>{{ with site.GetPage "/watching" }}{{ .Permalink }}{{ else }}{{ site.Home.Permalink }}{{ end }}</link>
+		<description>What we&#39;re watching on {{ site.Title }}</description>
+		<generator>Hugo</generator>
+		<language>{{ site.Language.Locale }}</language>
+		{{- with .OutputFormats.Get "watchingfeed" }}
+		{{ printf "<atom:link href=%q rel=\"self\" type=%q />" .Permalink .MediaType | safeHTML }}
+		{{- end }}
+		{{- with $pages }}
+		<lastBuildDate>{{ (index (.ByLastmod.Reverse) 0).Lastmod.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>
+		{{- end }}
+		{{- range $pages }}
+		<item>
+			<title>{{ .Title }}</title>
+			<link>{{ .Permalink }}</link>
+			<pubDate>{{ .PublishDate.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
+			<guid>{{ .Permalink }}</guid>
+			<description>{{ .Summary | transform.XMLEscape | safeHTML }}</description>
+		</item>
+		{{- end }}
+	</channel>
+</rss>
