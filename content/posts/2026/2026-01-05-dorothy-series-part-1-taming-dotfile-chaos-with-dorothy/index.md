@@ -3,7 +3,7 @@ layout: post
 title: "Taming the Dotfile Chaos with Dorothy - Part 1 of 3"
 description: "How Dorothy transformed my shell configuration from a mess of platform-specific hacks into a portable, multi-shell ecosystem that just works on Linux, macOS, and Windows WSL."
 date: 2026-01-05T10:00:00.000Z
-permalink: /posts/2026-01-05-dorothy-series-part-1/
+permalink: /posts/2026/2026-01-05-dorothy-series-part-1/
 preview: ""
 draft: false
 categories:

@@ -3,7 +3,7 @@ layout: post
 title: "I Benchmarked 10 AI Models for Email Triage — A Free Local Model Won"
 description: "I ran 275+ emails through Claude, Gemini, and 7 open-source models to find the best classifier for automated email triage. The winner surprised me."
 date: 2026-04-03T10:00:00.000Z
-permalink: /posts/2026-04-03-email-triage-local-model-wins/
+permalink: /posts/2026/2026-04-03-email-triage-local-model-wins/
 draft: false
 categories:
     - tech

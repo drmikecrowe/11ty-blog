@@ -3,7 +3,7 @@ layout: post
 title: "Fun with Home Assistant - Part 2: Auto-Switching My Fire TV's HDMI Input from a USB Switch"
 description: "How I wired a physical USB A/B switch to Home Assistant so flipping between my work and home laptops automatically wakes my Fire TV and changes its HDMI input — via ADB, a webhook, and a couple of nasty udev bugs."
 date: 2026-06-19T11:00:00.000Z
-permalink: /posts/2026-06-19-fun-with-home-assistant-part-2-hdmi-switching/
+permalink: /posts/2026/2026-06-19-fun-with-home-assistant-part-2-hdmi-switching/
 draft: false
 categories:
     - tech
@@ -31,7 +31,7 @@ _This post was written with AI assistance (Claude) for structure and formatting.
 **Part 2 of 2: Fun with Home Assistant**
 
 **Series Overview:**
-- **Part 1:** [Pulling My Weather Station into Home Assistant with a $40 USB Radio](/posts/2026-06-19-fun-with-home-assistant-part-1-weather-station/) - Capturing 433MHz sensors with an RTL-SDR
+- **Part 1:** [Pulling My Weather Station into Home Assistant with a $40 USB Radio](/posts/2026/2026-06-19-fun-with-home-assistant-part-1-weather-station/) - Capturing 433MHz sensors with an RTL-SDR
 - **Part 2:** Auto-Switching My Fire TV's HDMI Input from a USB Switch *(you are here)*
 
 ---
@@ -40,7 +40,7 @@ Let me set expectations up front:
 
 > **I thought this one would take an afternoon. It ate a weekend.**
 
-In [Part 1](/posts/2026-06-19-fun-with-home-assistant-part-1-weather-station/), the hard part was the *radio*, and the software mostly cooperated. This time it's the reverse: the idea is dead simple, and the software fought me at every single layer.
+In [Part 1](/posts/2026/2026-06-19-fun-with-home-assistant-part-1-weather-station/), the hard part was the *radio*, and the software mostly cooperated. This time it's the reverse: the idea is dead simple, and the software fought me at every single layer.
 
 ## Here's the scenario
 

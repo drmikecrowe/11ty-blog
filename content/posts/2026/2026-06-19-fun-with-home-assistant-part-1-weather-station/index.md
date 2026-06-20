@@ -3,7 +3,7 @@ layout: post
 title: "Fun with Home Assistant - Part 1: Pulling My Weather Station into Home Assistant with a $40 USB Radio"
 description: "How I used a cheap RTL-SDR dongle, rtl_433, and MQTT to get real-time local weather and rainfall graphs into Home Assistant — without walking to the LCD screen."
 date: 2026-06-19T10:00:00.000Z
-permalink: /posts/2026-06-19-fun-with-home-assistant-part-1-weather-station/
+permalink: /posts/2026/2026-06-19-fun-with-home-assistant-part-1-weather-station/
 draft: false
 categories:
     - tech
@@ -32,10 +32,9 @@ _This post was written with AI assistance (Claude) for structure and formatting.
 
 **Series Overview:**
 - **Part 1:** Pulling My Weather Station into Home Assistant with a $40 USB Radio *(you are here)*
-- **Part 2:** [Auto-Switching My Fire TV's HDMI Input from a USB Switch](/posts/2026-06-19-fun-with-home-assistant-part-2-hdmi-switching/) - ADB keycodes, a webhook, and udev bugs
+- **Part 2:** [Auto-Switching My Fire TV's HDMI Input from a USB Switch](/posts/2026/2026-06-19-fun-with-home-assistant-part-2-hdmi-switching/) - ADB keycodes, a webhook, and udev bugs
 
 ---
-
 
 Here's the embarrassing truth:
 
@@ -244,7 +243,7 @@ For forty bucks and an evening of fiddling, I turned a one-way LCD I resented in
 
 ## Close
 
-This is **Part 1** of my "Fun with Home Assistant" series. In [**Part 2**](/posts/2026-06-19-fun-with-home-assistant-part-2-hdmi-switching/), I wire a physical USB switch to my Fire TV so flipping between my work and home laptops auto-switches the HDMI input — an ADB, udev, and webhook rabbit hole that fought me much harder than this did.
+This is **Part 1** of my "Fun with Home Assistant" series. In [**Part 2**](/posts/2026/2026-06-19-fun-with-home-assistant-part-2-hdmi-switching/), I wire a physical USB switch to my Fire TV so flipping between my work and home laptops auto-switches the HDMI input — an ADB, udev, and webhook rabbit hole that fought me much harder than this did.
 
 If you want to replicate the weather setup, the tools doing the heavy lifting are all open source:
 

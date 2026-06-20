@@ -3,7 +3,7 @@ layout: post
 title: "Secrets Management with 1Password - Part 2 of 3"
 description: "How I use 1Password CLI integration in Dorothy to safely manage secrets in environment variables"
 date: 2026-01-05T16:10:51.000Z
-permalink: /posts/2026-01-05-dorothy-series-part-2/
+permalink: /posts/2026/2026-01-05-dorothy-series-part-2/
 preview: ""
 draft: false
 categories:

@@ -3,7 +3,7 @@ layout: post
 title: "Taming Git Worktrees: From Chaos to a Clean Hub Structure"
 description: "I set up git worktrees poorly for months — inconsistent names, folders scattered everywhere. Here's the clean hub structure I wish I'd started with, plus a tool to migrate your existing mess."
 date: 2026-03-06T10:00:00.000Z
-permalink: /posts/2026-03-06-taming-git-worktrees/
+permalink: /posts/2026/2026-03-06-taming-git-worktrees/
 draft: false
 categories:
     - tech

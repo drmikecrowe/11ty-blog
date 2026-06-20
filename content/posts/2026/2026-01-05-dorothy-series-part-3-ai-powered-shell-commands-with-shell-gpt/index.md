@@ -3,7 +3,7 @@ layout: post
 title: "AI-Powered Shell Commands with Shell-GPT - Part 3 of 3"
 description: "How I integrated Shell-GPT into Bash, Zsh, Fish, and Nushell with a simple Ctrl+O keybinding"
 date: 2026-01-05T16:21:01.000Z
-permalink: /posts/2026-01-05-dorothy-series-part-3/
+permalink: /posts/2026/2026-01-05-dorothy-series-part-3/
 preview: ""
 draft: false
 categories:
