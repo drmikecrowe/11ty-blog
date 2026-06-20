@@ -1,17 +1,30 @@
 {{- /*
   Code block render hook.
-  Keeps Chroma syntax highlighting (the rendered site is visually unchanged)
-  but normalizes whitespace so Medium's "Import a story" scraper behaves:
 
-    1. Strip leading/trailing blank lines. Chroma's trailing newline otherwise
-       imports as a stray empty code block.
-    2. Replace blank interior lines with a single space, so Medium keeps the
-       blank line instead of dropping it.
+  Keeps Chroma syntax highlighting for the site (the colored token <span>s are
+  preserved), but flattens Chroma's per-line wrapper spans so the markup is just
+  colored tokens separated by REAL newlines inside <pre>.
 
-  Note: we deliberately do NOT move newlines outside Chroma's per-line
-  <span style="display:flex"> wrappers. Those wrappers already create the line
-  break, so a loose newline beside them double-spaces every line on the site.
+  Why: Medium's "Import a story" scraper re-highlights code itself (highlight.js)
+  and only needs clean text + line breaks. It mis-extracts text from Chroma's
+  nested per-line <span style="display:flex"><span> wrappers (values jump lines).
+  A flat token stream with real newlines extracts cleanly. The site is visually
+  unchanged because <pre> already breaks on the newlines.
+
+  Steps:
+    1. trim leading/trailing blank lines (Chroma's trailing newline imports as a
+       stray empty code block).
+    2. blank interior lines -> a single space (Medium drops truly-empty lines).
+    3. remove the inter-line "</span></span><line-opener>" boundaries, the first
+       line opener, and the final line closer -> leaves tokens + newlines.
+    4. move any line-final newline out of a trailing color span so the newline is
+       plain text (Medium otherwise loses it, collapsing continued lines).
 */ -}}
 {{- $code := trim .Inner "\n" -}}
 {{- $code = replaceRE `(?m)^[ \t]*$` " " $code -}}
-{{- transform.Highlight $code .Type .Options -}}
+{{- $out := transform.Highlight $code .Type .Options | string -}}
+{{- $out = replaceRE `</span></span><span style="display:flex;"><span>` "" $out -}}
+{{- $out = replaceRE `<span style="display:flex;"><span>` "" $out -}}
+{{- $out = replaceRE `</span></span></code>` "</code>" $out -}}
+{{- $out = replaceRE "\n</span>" "</span>\n" $out -}}
+{{- $out | safeHTML -}}
