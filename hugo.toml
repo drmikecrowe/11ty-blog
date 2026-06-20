@@ -32,9 +32,6 @@ theme = 'ananke'
 [markup.goldmark.renderer]
   unsafe = true
 
-[markup.highlight]
-  codeFences = false
-
 # Production settings
 enableRobotsTXT = true
 canonifyURLs = true
