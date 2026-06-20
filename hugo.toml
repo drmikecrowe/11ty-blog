@@ -1,5 +1,5 @@
 baseURL = 'https://mikesshinyobjects.tech/'
-languageCode = 'en-us'
+locale = 'en-us'
 title = "Mike's Shiny Objects"
 theme = 'ananke'
 
@@ -50,13 +50,13 @@ canonifyURLs = true
 
 # Set lower priority for taxonomy pages
 [[cascade]]
-  [cascade._target]
+  [cascade.target]
     kind = "term"
   [cascade.sitemap]
     priority = 0.3
 
 [[cascade]]
-  [cascade._target]
+  [cascade.target]
     kind = "taxonomy"
   [cascade.sitemap]
     priority = 0.1
