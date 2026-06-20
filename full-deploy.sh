@@ -18,5 +18,6 @@ Co-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>"
 fi
 
 hugo
+AWS_PROFILE=personal-mike-AdministratorAccess aws-sso login
 AWS_PROFILE=personal-mike-AdministratorAccess aws s3 sync public/ s3://mikesshinyobjects.tech --delete
 AWS_PROFILE=personal-mike-AdministratorAccess aws --no-cli-pager cloudfront create-invalidation --distribution-id E230DHNOI4UQRZ --paths "/*"
