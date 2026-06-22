@@ -17,12 +17,8 @@
     {{- $all = where $all "Kind" "page" -}}
     {{- $recommended := where $all "Params.tags" "intersect" (slice "highly-recommended") -}}
     {{- $worth := where $all "Params.tags" "intersect" (slice "worth-watching") -}}
-    {{- $recRanked := where $recommended "Params.rank" "!=" nil -}}
-    {{- $recUnranked := where $recommended "Params.rank" "==" nil -}}
-    {{- $recSorted := $recRanked.ByParam "rank" | append $recUnranked -}}
-    {{- $worthRanked := where $worth "Params.rank" "!=" nil -}}
-    {{- $worthUnranked := where $worth "Params.rank" "==" nil -}}
-    {{- $worthSorted := $worthRanked.ByParam "rank" | append $worthUnranked -}}
+    {{- $recSorted := $recommended.ByDate.Reverse -}}
+    {{- $worthSorted := $worth.ByDate.Reverse -}}
 
     <!-- Highly Recommended Movies -->
     <details class="mb4">
