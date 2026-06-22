@@ -5,6 +5,7 @@ date: 2026-05-01
 draft: false
 tags:
   - 2026
+  - highly-recommended
 rank: 5
 author: Mike Crowe
 show_reading_time: true
@@ -19,7 +20,7 @@ year: 2023
 
 ## Our Thoughts
 
-I don't lightly give 5's to movies unless the are great.  This is a fantastic movie.  It's worth it just to like something Rory Kinnear did.  Not that I dislike him -- just Black Mirror?  I'll always remember him as the pig f***er.  The Diplomat?  The ass-hole PM.
+I don't lightly give 5's to movies unless the are great. This is a fantastic movie. It's worth it just to like something Rory Kinnear did. Not that I dislike him -- just Black Mirror? I'll always remember him as the pig f\*\*\*er. The Diplomat? The ass-hole PM.
 
 ## IMDB Summary
 
