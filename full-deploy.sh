@@ -2,19 +2,15 @@ set -ex
 
 # Ensure all files are committed before deploying
 if [[ -n $(git status --porcelain) ]]; then
-  git add -A
+	git add -A
 
-  # Generate commit message with claude
-  TIMESTAMP=$(date '+%Y-%m-%d %H:%M')
-  CHANGES=$(git diff --cached --stat | tail -1)
-  echo "Using APIkey=$ANTHROPIC_API_KEY"
-  COMMIT_MSG=$(claude -p "Generate a brief git commit message (one line, max 72 chars) for a blog deploy. Include this timestamp: $TIMESTAMP. Changed files summary: $CHANGES. Format: 'Deploy TIMESTAMP: brief description'")
+	# Generate commit message with claude
+	TIMESTAMP=$(date '+%Y-%m-%d %H:%M')
+	CHANGES=$(git diff --cached --stat | tail -1)
+	COMMIT_MSG=$(claude -p "Generate a brief git commit message (one line, max 72 chars) for a blog deploy. Include this timestamp: $TIMESTAMP. Changed files summary: $CHANGES. Format: 'Deploy TIMESTAMP: brief description'")
 
-  git commit -m "$COMMIT_MSG
-
-Co-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>"
-
-  git push
+	git commit -m "$COMMIT_MSG"
+	git push
 fi
 
 hugo
