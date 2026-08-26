@@ -42,6 +42,8 @@ That's the part I couldn't stop thinking about. If an adversarial loop does that
 
 Two disclaimers. Helping engineering orgs put this in place is work Pinnacle Solutions Group sells, so read the whole thing with that in mind. And it's running on a live client engagement right now, being developed with them and fitted to how they already work. I'm describing a process I believe in and am actively proving, not results I can hand you. When I get to what it costs, I'll be specific about what I don't yet know.
 
+The personal arc, though, is public if you want to check my work. It played out in the open on a side project of mine: [the review that converted me](https://github.com/drmikecrowe/harnessed/pull/185), where a differently-trained reviewer found a concurrency bug in code that self-review had blessed, and [a complete evidence run](https://github.com/drmikecrowe/harnessed/pull/414), spec through adversarial review through proof, on the fix for that same finding.
+
 ## Delivery breaks at the edges, not in the middle
 
 Think back through the projects that went badly for stupid reasons, not the ones with genuinely hard technical problems. Anecdotally, across the ones I've watched up close, nearly all of them broke at one of two boundaries.
@@ -86,9 +88,11 @@ Refinement answers *is this item ready*: is it clear, is it testable, roughly ho
 
 ### Pre-assembling the context
 
-The moment a story clears Gate 1, an agent goes and reads the codebase against it and assembles a context pack: which subsystems this touches, the patterns already in use there, the tests that cover that ground today, the prior art from the last time somebody did something similar.
+Once a story clears Gate 1, an agent reads the codebase against it and assembles a context pack: which subsystems this touches, the patterns already in use there, the tests that cover that ground today, the prior art from the last time somebody did something similar.
 
-This is small and it's cheap and I think it's one of the highest-leverage pieces in the whole process, because it gets produced while nobody is waiting on it. In grooming, the team walks in already knowing what the story touches instead of speculating out loud, which is most of what sizing actually needs, without paying for a full design on every item in the backlog. Later, it's the input the planning agent needs, already gathered.
+This is small and it's cheap and I think it's one of the highest-leverage pieces in the whole process, because it gets produced while nobody is waiting on it. If your team still holds a refinement meeting, everyone walks in already knowing what the story touches instead of speculating out loud, which is most of what sizing actually needs, without paying for a full design on every item in the backlog. Later, it's the input the planning agent needs, already gathered.
+
+When it runs is a knob, not a rule. A team that plans ahead can build the pack as soon as the story clears the gate. A team running lean can build it just in time, when an engineer picks up the story, so it reflects the codebase as it is that morning instead of three weeks ago. The orchestration bends to the team; the artifact is what matters.
 
 ### Then the plan, when someone picks up the work
 
@@ -108,7 +112,7 @@ A wrong guess about product intent is unrecoverable. Nothing downstream can dete
 
 The gauntlet ends with output: check results, coverage of the changed lines, planted faults caught. That output says the code was built to standard. It does not say the right thing was built, and treating those as the same claim is exactly the conflation this gate exists to prevent.
 
-That's what the **Evidence** document is for. Its shape is simple: each acceptance criterion from the Requirements, how the change satisfies it, and how that was verified. Tests mapped to specific criteria. The gauntlet's results. Screenshots where the change touches something a person looks at. It isn't written at the end as paperwork; it accumulates as the work is built. Evidence is the proof that the acceptance criteria were met, assembled from what the gauntlet produced.
+That's what the **Evidence** document is for. Its shape is simple: each acceptance criterion from the Requirements, how the change satisfies it, and how that was verified. Tests mapped to specific criteria. The gauntlet's results. Screenshots where the change touches something a person looks at. And one section every Evidence document must carry: what is *not* proven. Proof that can't state its own limits isn't proof, it's marketing. The document isn't written at the end as paperwork; it accumulates as the work is built. Evidence is the proof that the acceptance criteria were met, assembled from what the gauntlet produced.
 
 Gate 2 is the formal check on that proof. An agent validates the Evidence against the Requirements before the change is ever put up for review: does what the gauntlet proved actually prove what product asked for? Then the engineer must read the Evidence against the Requirements and personally decide whether the work meets the intent. The question isn't whether the tests are green; it's whether the thing does what was wanted. The AI assembles the proof, and the engineer renders the verdict and signs their name to it.
 
@@ -175,7 +179,7 @@ And a three-person team probably shouldn't run this as written. The walkthrough 
 
 ## How it lands in your org
 
-We customize the gates to your workflow rather than the other way around. The gates hook onto the states your team already has. No new methodology, nothing replaced, no migration.
+We customize the gates to fit, and the fit runs in two directions. The gates can hook onto the states your team already has: no new methodology, nothing replaced, no migration. Or they can anchor a leaner workflow, because once agents build the context, draft the plan, and prove the work, some of your ceremonies stop earning their place on the calendar, and a team that notices is free to act on it. Which direction to take is your call. The gates hold either way.
 
 And it's built to end. We lead the first run, coach the second, and step back to review only for the third. If your team still needs us on run four, we designed it wrong.
 
