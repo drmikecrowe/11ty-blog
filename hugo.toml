@@ -101,6 +101,8 @@ cloudFrontDistributionID = "E230DHNOI4UQRZ"
 [outputs]
 home = ["HTML", "blogfeed", "watchingfeed"]
 section = ["HTML"]
+taxonomy = ["HTML"]
+term = ["HTML"]
 
 [outputFormats.blogfeed]
 mediaType = "application/rss+xml"

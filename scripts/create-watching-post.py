@@ -98,7 +98,11 @@ def search_imdb(query: str, limit: int = 3) -> list:
 def fetch_plot(imdb_id: str) -> str:
     """Fetch plot summary for a single title using IMDB GraphQL API."""
     url = "https://graphql.imdb.com/"
-    headers = {"content-type": "application/json"}
+    # graphql.imdb.com 403s without a client-name header — verified 2026-08-26
+    headers = {
+        "content-type": "application/json",
+        "x-imdb-client-name": "imdb-web-next",
+    }
 
     query = """
     query GetPlot($id: ID!) {
@@ -172,7 +176,11 @@ def get_user_selection(results: list) -> int:
 def fetch_full_metadata(imdb_id: str) -> dict:
     """Fetch complete metadata for a movie/show using IMDB GraphQL API."""
     url = "https://graphql.imdb.com/"
-    headers = {"content-type": "application/json"}
+    # graphql.imdb.com 403s without a client-name header — verified 2026-08-26
+    headers = {
+        "content-type": "application/json",
+        "x-imdb-client-name": "imdb-web-next",
+    }
 
     query = """
     query GetTitle($id: ID!) {

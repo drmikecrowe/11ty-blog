@@ -1,23 +1,23 @@
 ---
 layout: post
-title: "The PR That Fooled Me"
-description: "How an immaculate AI-generated pull request, a second model with different training, and one concurrency bug convinced me to never ship AI code without adversarial review."
+title: The PR That Fooled Me
+description: How an immaculate AI-generated pull request, a second model with different training, and one concurrency bug convinced me to never ship AI code without adversarial review.
 date: 2026-08-26T09:00:00.000Z
-draft: true
+draft: false
 categories:
-    - tech
+  - tech
 tags:
-    - ai
-    - code-review
-    - testing
-    - claude
+  - ai
+  - code-review
+  - testing
+  - claude
 author: Mike Crowe
 seo:
-    title: "The PR That Fooled Me"
-    description: "How an immaculate AI-generated pull request, a second model with different training, and one concurrency bug convinced me to never ship AI code without adversarial review."
-    image: images/featured.png
+  title: The PR That Fooled Me
+  description: How an immaculate AI-generated pull request, a second model with different training, and one concurrency bug convinced me to never ship AI code without adversarial review.
+  image: images/featured.png
 featured_image: images/featured.png
-excerpt: "The best-looking PR in my repo had a data-loss race in it, and the model that wrote it reviewed itself and found nothing. Here's the three-week paper trail that changed how I ship code."
+excerpt: The best-looking PR in my repo had a data-loss race in it, and the model that wrote it reviewed itself and found nothing. Here's the three-week paper trail that changed how I ship code.
 ---
 _This post was written with AI assistance (Claude) for structure and formatting. The PRs, the bug, and the opinions are entirely my own._
 

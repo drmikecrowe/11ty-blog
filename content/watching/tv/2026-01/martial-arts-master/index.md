@@ -5,7 +5,7 @@ date: 2026-01-21
 draft: false
 tags:
     - 2026
-    - highly-recommend
+    - highly-recommended
 rank: 1
 author: Mike Crowe
 show_reading_time: true
