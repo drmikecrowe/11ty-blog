@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "The Tests That Would Not Notice"
-description: "What mutation testing found in a FastAPI and SvelteKit app with a green coverage report, and why reading PRs is now the smallest layer of my quality process."
+title: The Tests That Would Not Notice
+description: What mutation testing found in a FastAPI and SvelteKit app with a green coverage report, and why reading PRs is now the smallest layer of my quality process.
 date: 2026-10-10T09:00:00.000Z
-draft: true
+draft: false
 categories:
   - tech
 tags:
@@ -14,11 +14,11 @@ tags:
   - sdlc
 author: Mike Crowe
 seo:
-  title: "The Tests That Would Not Notice"
-  description: "What mutation testing found in a FastAPI and SvelteKit app with a green coverage report, and why reading PRs is now the smallest layer of my quality process."
+  title: The Tests That Would Not Notice
+  description: What mutation testing found in a FastAPI and SvelteKit app with a green coverage report, and why reading PRs is now the smallest layer of my quality process.
   image: images/featured.png
 featured_image: images/featured.png
-excerpt: "I didn't know what mutation testing was until a few months ago. Then I pointed it at an app with 80% coverage and it found three real bugs, a test that couldn't fail, and unit tests posting to production monitoring."
+excerpt: I didn't know what mutation testing was until a few months ago. Then I pointed it at an app with 80% coverage and it found three real bugs, a test that couldn't fail, and unit tests posting to production monitoring.
 ---
 _This post was written with AI assistance (Claude) for structure and formatting. The data, the bugs, and the opinions are entirely my own._
 
