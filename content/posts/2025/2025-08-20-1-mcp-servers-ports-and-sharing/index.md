@@ -317,7 +317,7 @@ Now, when I want to start up my MCP environment, I just run `./start-mcp-servers
 
 Here's what it looks like:
 
-![My tmux session with MCP servers running](/assets/images/2025/08/start-mcp-servers.png)
+![My tmux session with MCP servers running](images/start-mcp-servers.png)
 
 This setup makes it easy to see what's going on with each server, and I can easily restart a server if it crashes. It's a simple solution, but it's made my life a lot easier. And, most importantly, it keeps me from tripping over my own digital feet.
 m tripping over my own digital feet.

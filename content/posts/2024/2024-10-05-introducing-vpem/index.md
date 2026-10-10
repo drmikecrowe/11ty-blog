@@ -36,21 +36,21 @@ I realized that multiple profiles might make more sense than tons of extensions 
 
 For example, here's how to apply a group of extensions to a profile:
 
-![Apply Extensions](https://www.mikesshinyobjects.tech/assets/images/2024/10/VPEM-apply-example.png)
+![Apply Extensions](images/VPEM-apply-example.png)
 
 ## Process
 
 - First, dump your extensions for all your profiles
 
-![Dump Extensions](https://www.mikesshinyobjects.tech/assets/images/2024/10/VPEM-dump.gif)
+![Dump Extensions](images/VPEM-dump.gif)
 
 - Next, categorizing extensions by searching for common strings and assign to categories
 
-![Categorize Extensions](https://www.mikesshinyobjects.tech/assets/images/2024/10/VPEM-categorize.gif)
+![Categorize Extensions](images/VPEM-categorize.gif)
 
 - Finally, apply extensions to a profile
 
-![Apply Extensions](https://www.mikesshinyobjects.tech/assets/images/2024/10/VPEM-apply.gif)
+![Apply Extensions](images/VPEM-apply.gif)
 
 ## Installation
 
@@ -106,7 +106,7 @@ Please make sure to update tests as appropriate and adhere to the project's codi
 
 ## License
 
-This project is licensed under the Apache-2.0 License - see the [LICENSE](LICENSE.md) file for details.
+This project is licensed under the Apache-2.0 License - see the [LICENSE](https://github.com/drmikecrowe/vscode-profile-extension-manager/blob/main/LICENSE) file for details.
 
 ## Support
 
